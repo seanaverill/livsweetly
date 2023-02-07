@@ -1,0 +1,890 @@
+[07-Sep-2022 00:31:48 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home2/livsweet/public_html/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-sync/src/class-functions.php' (include_path='.:/opt/cpanel/ea-php80/root/usr/share/pear') in /home2/livsweet/public_html/wp-content/plugins/jetpack/vendor/jetpack-autoloader/class-php-autoloader.php:90
+Stack trace:
+#0 /home2/livsweet/public_html/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-sync/src/modules/class-module.php(191): Automattic\Jetpack\Autoloader\jpf11009ded9fc4592b6a05b61ce272b3c_jetpackⓥ11_2\PHP_Autoloader::load_class('Automattic\\Jetp...')
+#1 /home2/livsweet/public_html/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-sync/src/modules/class-updates.php(283): Automattic\Jetpack\Sync\Modules\Module->get_check_sum(Array)
+#2 /home2/livsweet/public_html/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-sync/src/modules/class-updates.php(296): Automattic\Jetpack\Sync\Modules\Updates->get_update_checksum(Object(stdClass), 'update_plugins')
+#3 /home2/livsweet/public_html/wp-includes/class-wp-hook.php(307): Automattic\Jetpack\Sync\Modules\Updates->validate_update_change(Object(stdClass), 0, 'update_plugins')
+#4 /home2/livsweet/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 /home2/livsweet/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#6 /home2/livsweet/public_html/wp-includes/option.php(2042): do_action('set_site_transi...', Object(stdClass), 0, 'update_plugins')
+#7 /home2/livsweet/public_html/wp-includes/update.php(354): set_site_transient('update_plugins', Object(stdClass))
+#8 /home2/livsweet/public_html/wp-content/plugins/jetpack/json-endpoints/jetpack/class.jetpack-json-api-plugins-list-endpoint.php(50): wp_update_plugins()
+#9 /home2/livsweet/public_html/wp-content/plugins/jetpack/json-endpoints/jetpack/class.jetpack-json-api-endpoint.php(44): Jetpack_JSON_API_Plugins_List_Endpoint->validate_input(NULL)
+#10 /home2/livsweet/public_html/wp-content/plugins/jetpack/class.json-api.php(566): Jetpack_JSON_API_Endpoint->callback('/sites/19991938...', '199919387')
+#11 /home2/livsweet/public_html/wp-content/plugins/jetpack/class.json-api.php(543): WPCOM_JSON_API->process_request(Object(Jetpack_JSON_API_Plugins_List_Endpoint), Array)
+#12 /home2/livsweet/public_html/wp-content/plugins/jetpack/class-jetpack-xmlrpc-methods.php(186): WPCOM_JSON_API->serve(false)
+#13 /home2/livsweet/public_html/wp-includes/IXR/class-IXR-server.php(121): Jetpack_XMLRPC_Methods::json_api(Array)
+#14 /home2/livsweet/public_html/wp-includes/IXR/class-IXR-server.php(207): IXR_Server->call('jetpack.jsonAPI', Array)
+#15 /home2/livsweet/public_html/wp-includes/IXR/class-IXR-server.php(109): IXR_Server->multiCall(Array)
+#16 /home2/livsweet/public_html/wp-includes/IXR/class-IXR-server.php(59): IXR_Server->call('system.multical...', Array)
+#17 /home2/livsweet/public_html/wp-includes/IXR/class-IXR-server.php(27): IXR_Server->serve('<?xml version="...')
+#18 /home2/livsweet/public_html/wp-includes/IXR/class-IXR-server.php(35): IXR_Server->__construct(Array, false, false)
+#19 /home2/livsweet/public_html/wp-includes/class-wp-xmlrpc-server.php(243): IXR_Server->IXR_Server(Array)
+#20 /home2/livsweet/public_html/xmlrpc.php(87): wp_xmlrpc_server->serve_request()
+#21 {main}
+  thrown in /home2/livsweet/public_html/wp-content/plugins/jetpack/vendor/jetpack-autoloader/class-php-autoloader.php on line 90
+[12-Sep-2022 08:47:36 UTC] PHP Fatal error:  Uncaught ValueError: Unknown format specifier "C" in /home2/livsweet/public_html/wp-includes/nav-menu-template.php:277
+Stack trace:
+#0 /home2/livsweet/public_html/wp-includes/nav-menu-template.php(277): sprintf('<ul id="%1$s" c...', 'menu-sitemenu', 'elementskit-nav...', '<li id="menu-it...')
+#1 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/widgets/nav-menu/nav-menu.php(1586): wp_nav_menu(Object(stdClass))
+#2 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/widgets/nav-menu/nav-menu.php(1510): Elementor\ElementsKit_Widget_Nav_Menu->render_raw()
+#3 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/controls-stack.php(2223): Elementor\ElementsKit_Widget_Nav_Menu->render()
+#4 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(609): Elementor\Controls_Stack->render_by_mode()
+#5 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(750): Elementor\Widget_Base->render_content()
+#6 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(447): Elementor\Widget_Base->print_content()
+#7 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(787): Elementor\Element_Base->print_element()
+#8 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(447): Elementor\Element_Base->print_content()
+#9 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(787): Elementor\Element_Base->print_element()
+#10 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(447): Elementor\Element_Base->print_content()
+#11 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/document.php(1635): Elementor\Element_Base->print_element()
+#12 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/document.php(1086): Elementor\Core\Base\Document->print_elements(Array)
+#13 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/frontend.php(1092): Elementor\Core\Base\Document->print_elements_with_wrapper(Array)
+#14 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/frontend.php(1006): Elementor\Frontend->get_builder_content(71)
+#15 /home2/livsweet/public_html/wp-includes/class-wp-hook.php(307): Elementor\Frontend->apply_builder_in_content('<a href="https:...')
+#16 /home2/livsweet/public_html/wp-includes/plugin.php(191): WP_Hook->apply_filters('<a href="https:...', Array)
+#17 /home2/livsweet/public_html/wp-includes/post-template.php(253): apply_filters('the_content', '<a href="https:...')
+#18 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/module.php(190): the_content()
+#19 [internal function]: Elementor\Modules\PageTemplates\Module->print_callback()
+#20 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/module.php(207): call_user_func(Array)
+#21 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/templates/canvas.php(38): Elementor\Modules\PageTemplates\Module->print_content()
+#22 /home2/livsweet/public_html/wp-includes/template-loader.php(106): include('/home2/livsweet...')
+#23 /home2/livsweet/public_html/wp-blog-header.php(19): require_once('/home2/livsweet...')
+#24 /home2/livsweet/public_html/index.php(17): require('/home2/livsweet...')
+#25 {main}
+  thrown in /home2/livsweet/public_html/wp-includes/nav-menu-template.php on line 277
+[28-Sep-2022 08:34:33 UTC] PHP Fatal error:  Uncaught ValueError: Unknown format specifier "C" in /home2/livsweet/public_html/wp-includes/nav-menu-template.php:277
+Stack trace:
+#0 /home2/livsweet/public_html/wp-includes/nav-menu-template.php(277): sprintf('<ul id="%1$s" c...', 'menu-sitemenu', 'elementskit-nav...', '<li id="menu-it...')
+#1 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/widgets/nav-menu/nav-menu.php(1586): wp_nav_menu(Object(stdClass))
+#2 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/widgets/nav-menu/nav-menu.php(1510): Elementor\ElementsKit_Widget_Nav_Menu->render_raw()
+#3 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/controls-stack.php(2249): Elementor\ElementsKit_Widget_Nav_Menu->render()
+#4 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(609): Elementor\Controls_Stack->render_by_mode()
+#5 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(750): Elementor\Widget_Base->render_content()
+#6 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(447): Elementor\Widget_Base->print_content()
+#7 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(787): Elementor\Element_Base->print_element()
+#8 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(447): Elementor\Element_Base->print_content()
+#9 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(787): Elementor\Element_Base->print_element()
+#10 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(447): Elementor\Element_Base->print_content()
+#11 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/document.php(1635): Elementor\Element_Base->print_element()
+#12 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/document.php(1086): Elementor\Core\Base\Document->print_elements(Array)
+#13 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/frontend.php(1092): Elementor\Core\Base\Document->print_elements_with_wrapper(Array)
+#14 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/frontend.php(1006): Elementor\Frontend->get_builder_content(71)
+#15 /home2/livsweet/public_html/wp-includes/class-wp-hook.php(307): Elementor\Frontend->apply_builder_in_content('<a href="https:...')
+#16 /home2/livsweet/public_html/wp-includes/plugin.php(191): WP_Hook->apply_filters('<a href="https:...', Array)
+#17 /home2/livsweet/public_html/wp-includes/post-template.php(253): apply_filters('the_content', '<a href="https:...')
+#18 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/module.php(190): the_content()
+#19 [internal function]: Elementor\Modules\PageTemplates\Module->print_callback()
+#20 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/module.php(207): call_user_func(Array)
+#21 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/templates/canvas.php(38): Elementor\Modules\PageTemplates\Module->print_content()
+#22 /home2/livsweet/public_html/wp-includes/template-loader.php(106): include('/home2/livsweet...')
+#23 /home2/livsweet/public_html/wp-blog-header.php(19): require_once('/home2/livsweet...')
+#24 /home2/livsweet/public_html/index.php(17): require('/home2/livsweet...')
+#25 {main}
+  thrown in /home2/livsweet/public_html/wp-includes/nav-menu-template.php on line 277
+[08-Oct-2022 13:49:52 UTC] PHP Fatal error:  Uncaught ValueError: Unknown format specifier "C" in /home2/livsweet/public_html/wp-includes/nav-menu-template.php:277
+Stack trace:
+#0 /home2/livsweet/public_html/wp-includes/nav-menu-template.php(277): sprintf('<ul id="%1$s" c...', 'menu-sitemenu', 'elementskit-nav...', '<li id="menu-it...')
+#1 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/widgets/nav-menu/nav-menu.php(1592): wp_nav_menu(Object(stdClass))
+#2 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/widgets/nav-menu/nav-menu.php(1516): Elementor\ElementsKit_Widget_Nav_Menu->render_raw()
+#3 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/controls-stack.php(2249): Elementor\ElementsKit_Widget_Nav_Menu->render()
+#4 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(609): Elementor\Controls_Stack->render_by_mode()
+#5 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(750): Elementor\Widget_Base->render_content()
+#6 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(447): Elementor\Widget_Base->print_content()
+#7 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(787): Elementor\Element_Base->print_element()
+#8 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(447): Elementor\Element_Base->print_content()
+#9 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(787): Elementor\Element_Base->print_element()
+#10 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(447): Elementor\Element_Base->print_content()
+#11 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/document.php(1635): Elementor\Element_Base->print_element()
+#12 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/document.php(1086): Elementor\Core\Base\Document->print_elements(Array)
+#13 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/frontend.php(1092): Elementor\Core\Base\Document->print_elements_with_wrapper(Array)
+#14 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/frontend.php(1006): Elementor\Frontend->get_builder_content(71)
+#15 /home2/livsweet/public_html/wp-includes/class-wp-hook.php(307): Elementor\Frontend->apply_builder_in_content('<a href="https:...')
+#16 /home2/livsweet/public_html/wp-includes/plugin.php(191): WP_Hook->apply_filters('<a href="https:...', Array)
+#17 /home2/livsweet/public_html/wp-includes/post-template.php(253): apply_filters('the_content', '<a href="https:...')
+#18 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/module.php(190): the_content()
+#19 [internal function]: Elementor\Modules\PageTemplates\Module->print_callback()
+#20 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/module.php(207): call_user_func(Array)
+#21 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/templates/canvas.php(38): Elementor\Modules\PageTemplates\Module->print_content()
+#22 /home2/livsweet/public_html/wp-includes/template-loader.php(106): include('/home2/livsweet...')
+#23 /home2/livsweet/public_html/wp-blog-header.php(19): require_once('/home2/livsweet...')
+#24 /home2/livsweet/public_html/index.php(17): require('/home2/livsweet...')
+#25 {main}
+  thrown in /home2/livsweet/public_html/wp-includes/nav-menu-template.php on line 277
+[14-Oct-2022 16:23:55 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query DELETE FROM `VPl_options` WHERE `option_name` = '_transient_timeout_global_styles_svg_filters_hello-elementor' made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/plugins/elementor/modules/page-templates/templates/header-footer.php'), get_header, do_action('get_header'), WP_Hook->do_action, WP_Hook->apply_filters, ElementsKit_Lite\Modules\Header_Footer\Theme_Hooks\Theme_Support->get_header, require('/plugins/elementskit-lite/modules/header-footer/views/theme-support-header.php'), wp_body_open, do_action('wp_body_open'), WP_Hook->do_action, WP_Hook->apply_filters, wp_global_styles_render_svg_filters, wp_get_global_styles_svg_filters, get_transient, delete_option
+[18-Oct-2022 12:56:15 UTC] PHP Warning:  require(/home2/livsweet/public_html/wp-content/plugins/happy-elementor-addons/base.php): Failed to open stream: No such file or directory in /home2/livsweet/public_html/wp-content/plugins/happy-elementor-addons/plugin.php on line 82
+[18-Oct-2022 12:56:15 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home2/livsweet/public_html/wp-content/plugins/happy-elementor-addons/base.php' (include_path='.:/opt/cpanel/ea-php80/root/usr/share/pear') in /home2/livsweet/public_html/wp-content/plugins/happy-elementor-addons/plugin.php:82
+Stack trace:
+#0 /home2/livsweet/public_html/wp-includes/class-wp-hook.php(307): ha_let_the_journey_begin('')
+#1 /home2/livsweet/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters(Object(MonsterInsights_Lite), Array)
+#2 /home2/livsweet/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#3 /home2/livsweet/public_html/wp-settings.php(461): do_action('plugins_loaded')
+#4 /home2/livsweet/public_html/wp-config.php(101): require_once('/home2/livsweet...')
+#5 /home2/livsweet/public_html/wp-load.php(50): require_once('/home2/livsweet...')
+#6 /home2/livsweet/public_html/xmlrpc.php(31): require_once('/home2/livsweet...')
+#7 {main}
+  thrown in /home2/livsweet/public_html/wp-content/plugins/happy-elementor-addons/plugin.php on line 82
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "robotsMeta" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 345
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "default" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 345
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "robotsMeta" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 346
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "noindex" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 346
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "robotsMeta" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 345
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "default" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 345
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "robotsMeta" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 346
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "noindex" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 346
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "robotsMeta" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 345
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "default" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 345
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "robotsMeta" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 346
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "noindex" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 346
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "robotsMeta" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 345
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "default" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 345
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "robotsMeta" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 346
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "noindex" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 346
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "robotsMeta" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 345
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "default" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 345
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "robotsMeta" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 346
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "noindex" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 346
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "robotsMeta" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 345
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "default" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 345
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "robotsMeta" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 346
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "noindex" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 346
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "robotsMeta" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 355
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "default" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 355
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "robotsMeta" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 356
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "noindex" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 356
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "robotsMeta" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 411
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "default" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 411
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "robotsMeta" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 412
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "nofollow" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 412
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "robotsMeta" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 411
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "default" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 411
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "robotsMeta" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 412
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "nofollow" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 412
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "robotsMeta" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 411
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "default" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 411
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "robotsMeta" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 412
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "nofollow" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 412
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "robotsMeta" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 411
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "default" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 411
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "robotsMeta" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 412
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "nofollow" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 412
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "robotsMeta" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 411
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "default" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 411
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "robotsMeta" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 412
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "nofollow" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 412
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "robotsMeta" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 411
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "default" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 411
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "robotsMeta" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 412
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "nofollow" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 412
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "robotsMeta" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 421
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "default" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 421
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "robotsMeta" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 422
+[03-Nov-2022 00:24:41 UTC] PHP Warning:  Attempt to read property "nofollow" on null in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Admin/SiteHealth.php on line 422
+[12-Nov-2022 13:22:46 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query DELETE FROM `VPl_options` WHERE `option_name` = '_transient_global_styles_hello-elementor' made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/hello-elementor/index.php'), get_header, do_action('get_header'), WP_Hook->do_action, WP_Hook->apply_filters, ElementsKit_Lite\Modules\Header_Footer\Theme_Hooks\Theme_Support->get_header, require('/plugins/elementskit-lite/modules/header-footer/views/theme-support-header.php'), wp_head, do_action('wp_head'), WP_Hook->do_action, WP_Hook->apply_filters, wp_enqueue_scripts, do_action('wp_enqueue_scripts'), WP_Hook->do_action, WP_Hook->apply_filters, wp_enqueue_global_styles, wp_get_global_stylesheet, get_transient, delete_option
+[12-Nov-2022 18:10:31 UTC] PHP Fatal error:  Uncaught ValueError: Unknown format specifier "C" in /home2/livsweet/public_html/wp-includes/nav-menu-template.php:291
+Stack trace:
+#0 /home2/livsweet/public_html/wp-includes/nav-menu-template.php(291): sprintf('<ul id="%1$s" c...', 'menu-sitemenu', 'elementskit-nav...', '<li id="menu-it...')
+#1 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/widgets/nav-menu/nav-menu.php(1597): wp_nav_menu(Object(stdClass))
+#2 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/widgets/nav-menu/nav-menu.php(1516): Elementor\ElementsKit_Widget_Nav_Menu->render_raw()
+#3 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/controls-stack.php(2266): Elementor\ElementsKit_Widget_Nav_Menu->render()
+#4 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(609): Elementor\Controls_Stack->render_by_mode()
+#5 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(750): Elementor\Widget_Base->render_content()
+#6 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(447): Elementor\Widget_Base->print_content()
+#7 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(801): Elementor\Element_Base->print_element()
+#8 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(447): Elementor\Element_Base->print_content()
+#9 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(801): Elementor\Element_Base->print_element()
+#10 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(447): Elementor\Element_Base->print_content()
+#11 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/document.php(1652): Elementor\Element_Base->print_element()
+#12 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/document.php(1087): Elementor\Core\Base\Document->print_elements(Array)
+#13 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/frontend.php(1144): Elementor\Core\Base\Document->print_elements_with_wrapper(Array)
+#14 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/frontend.php(1039): Elementor\Frontend->get_builder_content(71)
+#15 /home2/livsweet/public_html/wp-includes/class-wp-hook.php(308): Elementor\Frontend->apply_builder_in_content('<a href="https:...')
+#16 /home2/livsweet/public_html/wp-includes/plugin.php(205): WP_Hook->apply_filters('<a href="https:...', Array)
+#17 /home2/livsweet/public_html/wp-includes/post-template.php(255): apply_filters('the_content', '<a href="https:...')
+#18 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/module.php(190): the_content()
+#19 [internal function]: Elementor\Modules\PageTemplates\Module->print_callback()
+#20 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/module.php(207): call_user_func(Array)
+#21 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/templates/canvas.php(38): Elementor\Modules\PageTemplates\Module->print_content()
+#22 /home2/livsweet/public_html/wp-includes/template-loader.php(106): include('/home2/livsweet...')
+#23 /home2/livsweet/public_html/wp-blog-header.php(19): require_once('/home2/livsweet...')
+#24 /home2/livsweet/public_html/index.php(17): require('/home2/livsweet...')
+#25 {main}
+  thrown in /home2/livsweet/public_html/wp-includes/nav-menu-template.php on line 291
+[13-Nov-2022 05:31:53 UTC] PHP Fatal error:  Uncaught ValueError: Unknown format specifier "C" in /home2/livsweet/public_html/wp-includes/nav-menu-template.php:291
+Stack trace:
+#0 /home2/livsweet/public_html/wp-includes/nav-menu-template.php(291): sprintf('<ul id="%1$s" c...', 'menu-sitemenu', 'elementskit-nav...', '<li id="menu-it...')
+#1 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/widgets/nav-menu/nav-menu.php(1597): wp_nav_menu(Object(stdClass))
+#2 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/widgets/nav-menu/nav-menu.php(1516): Elementor\ElementsKit_Widget_Nav_Menu->render_raw()
+#3 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/controls-stack.php(2266): Elementor\ElementsKit_Widget_Nav_Menu->render()
+#4 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(609): Elementor\Controls_Stack->render_by_mode()
+#5 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(750): Elementor\Widget_Base->render_content()
+#6 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(447): Elementor\Widget_Base->print_content()
+#7 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(801): Elementor\Element_Base->print_element()
+#8 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(447): Elementor\Element_Base->print_content()
+#9 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(801): Elementor\Element_Base->print_element()
+#10 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(447): Elementor\Element_Base->print_content()
+#11 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/document.php(1652): Elementor\Element_Base->print_element()
+#12 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/document.php(1087): Elementor\Core\Base\Document->print_elements(Array)
+#13 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/frontend.php(1144): Elementor\Core\Base\Document->print_elements_with_wrapper(Array)
+#14 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/frontend.php(1039): Elementor\Frontend->get_builder_content(71)
+#15 /home2/livsweet/public_html/wp-includes/class-wp-hook.php(308): Elementor\Frontend->apply_builder_in_content('<a href="https:...')
+#16 /home2/livsweet/public_html/wp-includes/plugin.php(205): WP_Hook->apply_filters('<a href="https:...', Array)
+#17 /home2/livsweet/public_html/wp-includes/post-template.php(255): apply_filters('the_content', '<a href="https:...')
+#18 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/module.php(190): the_content()
+#19 [internal function]: Elementor\Modules\PageTemplates\Module->print_callback()
+#20 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/module.php(207): call_user_func(Array)
+#21 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/templates/canvas.php(38): Elementor\Modules\PageTemplates\Module->print_content()
+#22 /home2/livsweet/public_html/wp-includes/template-loader.php(106): include('/home2/livsweet...')
+#23 /home2/livsweet/public_html/wp-blog-header.php(19): require_once('/home2/livsweet...')
+#24 /home2/livsweet/public_html/index.php(17): require('/home2/livsweet...')
+#25 {main}
+  thrown in /home2/livsweet/public_html/wp-includes/nav-menu-template.php on line 291
+[19-Nov-2022 21:43:18 UTC] PHP Fatal error:  Uncaught ValueError: Unknown format specifier "C" in /home2/livsweet/public_html/wp-includes/nav-menu-template.php:291
+Stack trace:
+#0 /home2/livsweet/public_html/wp-includes/nav-menu-template.php(291): sprintf('<ul id="%1$s" c...', 'menu-sitemenu', 'elementskit-nav...', '<li id="menu-it...')
+#1 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/widgets/nav-menu/nav-menu.php(1597): wp_nav_menu(Object(stdClass))
+#2 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/widgets/nav-menu/nav-menu.php(1516): Elementor\ElementsKit_Widget_Nav_Menu->render_raw()
+#3 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/controls-stack.php(2266): Elementor\ElementsKit_Widget_Nav_Menu->render()
+#4 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(609): Elementor\Controls_Stack->render_by_mode()
+#5 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(750): Elementor\Widget_Base->render_content()
+#6 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(447): Elementor\Widget_Base->print_content()
+#7 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(801): Elementor\Element_Base->print_element()
+#8 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(447): Elementor\Element_Base->print_content()
+#9 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(801): Elementor\Element_Base->print_element()
+#10 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(447): Elementor\Element_Base->print_content()
+#11 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/document.php(1652): Elementor\Element_Base->print_element()
+#12 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/document.php(1087): Elementor\Core\Base\Document->print_elements(Array)
+#13 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/frontend.php(1144): Elementor\Core\Base\Document->print_elements_with_wrapper(Array)
+#14 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/frontend.php(1039): Elementor\Frontend->get_builder_content(71)
+#15 /home2/livsweet/public_html/wp-includes/class-wp-hook.php(308): Elementor\Frontend->apply_builder_in_content('<a href="https:...')
+#16 /home2/livsweet/public_html/wp-includes/plugin.php(205): WP_Hook->apply_filters('<a href="https:...', Array)
+#17 /home2/livsweet/public_html/wp-includes/post-template.php(255): apply_filters('the_content', '<a href="https:...')
+#18 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/module.php(190): the_content()
+#19 [internal function]: Elementor\Modules\PageTemplates\Module->print_callback()
+#20 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/module.php(207): call_user_func(Array)
+#21 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/templates/canvas.php(38): Elementor\Modules\PageTemplates\Module->print_content()
+#22 /home2/livsweet/public_html/wp-includes/template-loader.php(106): include('/home2/livsweet...')
+#23 /home2/livsweet/public_html/wp-blog-header.php(19): require_once('/home2/livsweet...')
+#24 /home2/livsweet/public_html/index.php(17): require('/home2/livsweet...')
+#25 {main}
+  thrown in /home2/livsweet/public_html/wp-includes/nav-menu-template.php on line 291
+[22-Nov-2022 14:32:46 UTC] PHP Fatal error:  Uncaught ValueError: Unknown format specifier "C" in /home2/livsweet/public_html/wp-includes/nav-menu-template.php:291
+Stack trace:
+#0 /home2/livsweet/public_html/wp-includes/nav-menu-template.php(291): sprintf('<ul id="%1$s" c...', 'menu-sitemenu', 'elementskit-nav...', '<li id="menu-it...')
+#1 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/widgets/nav-menu/nav-menu.php(1597): wp_nav_menu(Object(stdClass))
+#2 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/widgets/nav-menu/nav-menu.php(1516): Elementor\ElementsKit_Widget_Nav_Menu->render_raw()
+#3 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/controls-stack.php(2266): Elementor\ElementsKit_Widget_Nav_Menu->render()
+#4 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(609): Elementor\Controls_Stack->render_by_mode()
+#5 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(750): Elementor\Widget_Base->render_content()
+#6 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(447): Elementor\Widget_Base->print_content()
+#7 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(801): Elementor\Element_Base->print_element()
+#8 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(447): Elementor\Element_Base->print_content()
+#9 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(801): Elementor\Element_Base->print_element()
+#10 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(447): Elementor\Element_Base->print_content()
+#11 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/document.php(1652): Elementor\Element_Base->print_element()
+#12 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/document.php(1087): Elementor\Core\Base\Document->print_elements(Array)
+#13 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/frontend.php(1144): Elementor\Core\Base\Document->print_elements_with_wrapper(Array)
+#14 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/frontend.php(1039): Elementor\Frontend->get_builder_content(71)
+#15 /home2/livsweet/public_html/wp-includes/class-wp-hook.php(308): Elementor\Frontend->apply_builder_in_content('<a href="https:...')
+#16 /home2/livsweet/public_html/wp-includes/plugin.php(205): WP_Hook->apply_filters('<a href="https:...', Array)
+#17 /home2/livsweet/public_html/wp-includes/post-template.php(255): apply_filters('the_content', '<a href="https:...')
+#18 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/module.php(190): the_content()
+#19 [internal function]: Elementor\Modules\PageTemplates\Module->print_callback()
+#20 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/module.php(207): call_user_func(Array)
+#21 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/templates/canvas.php(38): Elementor\Modules\PageTemplates\Module->print_content()
+#22 /home2/livsweet/public_html/wp-includes/template-loader.php(106): include('/home2/livsweet...')
+#23 /home2/livsweet/public_html/wp-blog-header.php(19): require_once('/home2/livsweet...')
+#24 /home2/livsweet/public_html/index.php(17): require('/home2/livsweet...')
+#25 {main}
+  thrown in /home2/livsweet/public_html/wp-includes/nav-menu-template.php on line 291
+[25-Nov-2022 05:21:24 UTC] PHP Fatal error:  Uncaught ValueError: Unknown format specifier "C" in /home2/livsweet/public_html/wp-includes/nav-menu-template.php:291
+Stack trace:
+#0 /home2/livsweet/public_html/wp-includes/nav-menu-template.php(291): sprintf('<ul id="%1$s" c...', 'menu-sitemenu', 'elementskit-nav...', '<li id="menu-it...')
+#1 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/widgets/nav-menu/nav-menu.php(1597): wp_nav_menu(Object(stdClass))
+#2 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/widgets/nav-menu/nav-menu.php(1516): Elementor\ElementsKit_Widget_Nav_Menu->render_raw()
+#3 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/controls-stack.php(2266): Elementor\ElementsKit_Widget_Nav_Menu->render()
+#4 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(609): Elementor\Controls_Stack->render_by_mode()
+#5 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(750): Elementor\Widget_Base->render_content()
+#6 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(447): Elementor\Widget_Base->print_content()
+#7 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(801): Elementor\Element_Base->print_element()
+#8 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(447): Elementor\Element_Base->print_content()
+#9 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(801): Elementor\Element_Base->print_element()
+#10 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(447): Elementor\Element_Base->print_content()
+#11 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/document.php(1652): Elementor\Element_Base->print_element()
+#12 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/document.php(1087): Elementor\Core\Base\Document->print_elements(Array)
+#13 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/frontend.php(1144): Elementor\Core\Base\Document->print_elements_with_wrapper(Array)
+#14 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/frontend.php(1039): Elementor\Frontend->get_builder_content(71)
+#15 /home2/livsweet/public_html/wp-includes/class-wp-hook.php(308): Elementor\Frontend->apply_builder_in_content('<a href="https:...')
+#16 /home2/livsweet/public_html/wp-includes/plugin.php(205): WP_Hook->apply_filters('<a href="https:...', Array)
+#17 /home2/livsweet/public_html/wp-includes/post-template.php(255): apply_filters('the_content', '<a href="https:...')
+#18 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/module.php(190): the_content()
+#19 [internal function]: Elementor\Modules\PageTemplates\Module->print_callback()
+#20 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/module.php(207): call_user_func(Array)
+#21 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/templates/canvas.php(38): Elementor\Modules\PageTemplates\Module->print_content()
+#22 /home2/livsweet/public_html/wp-includes/template-loader.php(106): include('/home2/livsweet...')
+#23 /home2/livsweet/public_html/wp-blog-header.php(19): require_once('/home2/livsweet...')
+#24 /home2/livsweet/public_html/index.php(17): require('/home2/livsweet...')
+#25 {main}
+  thrown in /home2/livsweet/public_html/wp-includes/nav-menu-template.php on line 291
+[26-Nov-2022 22:53:30 UTC] PHP Fatal error:  Uncaught ValueError: Unknown format specifier "C" in /home2/livsweet/public_html/wp-includes/nav-menu-template.php:291
+Stack trace:
+#0 /home2/livsweet/public_html/wp-includes/nav-menu-template.php(291): sprintf('<ul id="%1$s" c...', 'menu-sitemenu', 'elementskit-nav...', '<li id="menu-it...')
+#1 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/widgets/nav-menu/nav-menu.php(1597): wp_nav_menu(Object(stdClass))
+#2 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/widgets/nav-menu/nav-menu.php(1516): Elementor\ElementsKit_Widget_Nav_Menu->render_raw()
+#3 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/controls-stack.php(2266): Elementor\ElementsKit_Widget_Nav_Menu->render()
+#4 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(609): Elementor\Controls_Stack->render_by_mode()
+#5 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(750): Elementor\Widget_Base->render_content()
+#6 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(447): Elementor\Widget_Base->print_content()
+#7 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(801): Elementor\Element_Base->print_element()
+#8 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(447): Elementor\Element_Base->print_content()
+#9 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(801): Elementor\Element_Base->print_element()
+#10 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(447): Elementor\Element_Base->print_content()
+#11 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/document.php(1652): Elementor\Element_Base->print_element()
+#12 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/document.php(1087): Elementor\Core\Base\Document->print_elements(Array)
+#13 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/frontend.php(1144): Elementor\Core\Base\Document->print_elements_with_wrapper(Array)
+#14 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/frontend.php(1039): Elementor\Frontend->get_builder_content(71)
+#15 /home2/livsweet/public_html/wp-includes/class-wp-hook.php(308): Elementor\Frontend->apply_builder_in_content('<a href="https:...')
+#16 /home2/livsweet/public_html/wp-includes/plugin.php(205): WP_Hook->apply_filters('<a href="https:...', Array)
+#17 /home2/livsweet/public_html/wp-includes/post-template.php(255): apply_filters('the_content', '<a href="https:...')
+#18 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/module.php(190): the_content()
+#19 [internal function]: Elementor\Modules\PageTemplates\Module->print_callback()
+#20 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/module.php(207): call_user_func(Array)
+#21 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/templates/canvas.php(38): Elementor\Modules\PageTemplates\Module->print_content()
+#22 /home2/livsweet/public_html/wp-includes/template-loader.php(106): include('/home2/livsweet...')
+#23 /home2/livsweet/public_html/wp-blog-header.php(19): require_once('/home2/livsweet...')
+#24 /home2/livsweet/public_html/index.php(17): require('/home2/livsweet...')
+#25 {main}
+  thrown in /home2/livsweet/public_html/wp-includes/nav-menu-template.php on line 291
+[03-Dec-2022 05:54:33 UTC] PHP Fatal error:  Uncaught ValueError: Unknown format specifier "C" in /home2/livsweet/public_html/wp-includes/nav-menu-template.php:291
+Stack trace:
+#0 /home2/livsweet/public_html/wp-includes/nav-menu-template.php(291): sprintf('<ul id="%1$s" c...', 'menu-sitemenu', 'elementskit-nav...', '<li id="menu-it...')
+#1 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/widgets/nav-menu/nav-menu.php(1597): wp_nav_menu(Object(stdClass))
+#2 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/widgets/nav-menu/nav-menu.php(1516): Elementor\ElementsKit_Widget_Nav_Menu->render_raw()
+#3 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/controls-stack.php(2266): Elementor\ElementsKit_Widget_Nav_Menu->render()
+#4 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(609): Elementor\Controls_Stack->render_by_mode()
+#5 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(750): Elementor\Widget_Base->render_content()
+#6 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(447): Elementor\Widget_Base->print_content()
+#7 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(801): Elementor\Element_Base->print_element()
+#8 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(447): Elementor\Element_Base->print_content()
+#9 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(801): Elementor\Element_Base->print_element()
+#10 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(447): Elementor\Element_Base->print_content()
+#11 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/document.php(1652): Elementor\Element_Base->print_element()
+#12 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/document.php(1087): Elementor\Core\Base\Document->print_elements(Array)
+#13 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/frontend.php(1144): Elementor\Core\Base\Document->print_elements_with_wrapper(Array)
+#14 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/frontend.php(1039): Elementor\Frontend->get_builder_content(71)
+#15 /home2/livsweet/public_html/wp-includes/class-wp-hook.php(308): Elementor\Frontend->apply_builder_in_content('<a href="https:...')
+#16 /home2/livsweet/public_html/wp-includes/plugin.php(205): WP_Hook->apply_filters('<a href="https:...', Array)
+#17 /home2/livsweet/public_html/wp-includes/post-template.php(255): apply_filters('the_content', '<a href="https:...')
+#18 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/module.php(190): the_content()
+#19 [internal function]: Elementor\Modules\PageTemplates\Module->print_callback()
+#20 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/module.php(207): call_user_func(Array)
+#21 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/templates/canvas.php(38): Elementor\Modules\PageTemplates\Module->print_content()
+#22 /home2/livsweet/public_html/wp-includes/template-loader.php(106): include('/home2/livsweet...')
+#23 /home2/livsweet/public_html/wp-blog-header.php(19): require_once('/home2/livsweet...')
+#24 /home2/livsweet/public_html/index.php(17): require('/home2/livsweet...')
+#25 {main}
+  thrown in /home2/livsweet/public_html/wp-includes/nav-menu-template.php on line 291
+[07-Dec-2022 07:44:08 UTC] PHP Fatal error:  Uncaught ValueError: Unknown format specifier "C" in /home2/livsweet/public_html/wp-includes/nav-menu-template.php:291
+Stack trace:
+#0 /home2/livsweet/public_html/wp-includes/nav-menu-template.php(291): sprintf('<ul id="%1$s" c...', 'menu-sitemenu', 'elementskit-nav...', '<li id="menu-it...')
+#1 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/widgets/nav-menu/nav-menu.php(1597): wp_nav_menu(Object(stdClass))
+#2 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/widgets/nav-menu/nav-menu.php(1516): Elementor\ElementsKit_Widget_Nav_Menu->render_raw()
+#3 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/controls-stack.php(2266): Elementor\ElementsKit_Widget_Nav_Menu->render()
+#4 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(609): Elementor\Controls_Stack->render_by_mode()
+#5 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(750): Elementor\Widget_Base->render_content()
+#6 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(449): Elementor\Widget_Base->print_content()
+#7 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(1348): Elementor\Element_Base->print_element()
+#8 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(449): Elementor\Element_Base->print_content()
+#9 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(1348): Elementor\Element_Base->print_element()
+#10 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(449): Elementor\Element_Base->print_content()
+#11 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/document.php(1669): Elementor\Element_Base->print_element()
+#12 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/document.php(1095): Elementor\Core\Base\Document->print_elements(Array)
+#13 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/frontend.php(1153): Elementor\Core\Base\Document->print_elements_with_wrapper(Array)
+#14 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/frontend.php(1048): Elementor\Frontend->get_builder_content(71)
+#15 /home2/livsweet/public_html/wp-includes/class-wp-hook.php(308): Elementor\Frontend->apply_builder_in_content('<a href="https:...')
+#16 /home2/livsweet/public_html/wp-includes/plugin.php(205): WP_Hook->apply_filters('<a href="https:...', Array)
+#17 /home2/livsweet/public_html/wp-includes/post-template.php(255): apply_filters('the_content', '<a href="https:...')
+#18 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/module.php(190): the_content()
+#19 [internal function]: Elementor\Modules\PageTemplates\Module->print_callback()
+#20 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/module.php(207): call_user_func(Array)
+#21 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/templates/canvas.php(38): Elementor\Modules\PageTemplates\Module->print_content()
+#22 /home2/livsweet/public_html/wp-includes/template-loader.php(106): include('/home2/livsweet...')
+#23 /home2/livsweet/public_html/wp-blog-header.php(19): require_once('/home2/livsweet...')
+#24 /home2/livsweet/public_html/index.php(17): require('/home2/livsweet...')
+#25 {main}
+  thrown in /home2/livsweet/public_html/wp-includes/nav-menu-template.php on line 291
+[08-Dec-2022 16:20:35 UTC] Cron unschedule event error for hook: jetpack_scan_refresh_states_event, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":false,"args":[]}
+[08-Dec-2022 21:06:22 UTC] Exception caught in Automattic\WooCommerce\Admin\Notes\Notes::get_note. Invalid admin note. Args: Array
+(
+    [0] => 40
+)
+..
+[08-Dec-2022 21:06:45 UTC] PHP Fatal error:  Uncaught WCPay\Exceptions\API_Exception: Error: Accounts do not currently support `card_payments` without `transfers`. Please visit https://stripe.com/docs/connect/account-capabilities#card-payments for more details. in /home2/livsweet/public_html/wp-content/plugins/woocommerce-payments/includes/wc-payment-api/class-wc-payments-api-client.php:2249
+Stack trace:
+#0 /home2/livsweet/public_html/wp-content/plugins/woocommerce-payments/includes/wc-payment-api/class-wc-payments-api-client.php(2094): WC_Payments_API_Client->check_response_for_errors(Array)
+#1 /home2/livsweet/public_html/wp-content/plugins/woocommerce-payments/includes/wc-payment-api/class-wc-payments-api-client.php(1183): WC_Payments_API_Client->request(Array, 'accounts/capabi...', 'POST', true, true)
+#2 /home2/livsweet/public_html/wp-content/plugins/woocommerce-payments/includes/admin/class-wc-rest-payments-settings-controller.php(526): WC_Payments_API_Client->request_capability('card_payments', true)
+#3 /home2/livsweet/public_html/wp-content/plugins/woocommerce-payments/includes/admin/class-wc-rest-payments-settings-controller.php(507): WC_REST_Payments_Settings_Controller->request_unrequested_payment_methods(Array)
+#4 /home2/livsweet/public_html/wp-content/plugins/woocommerce-payments/includes/admin/class-wc-rest-payments-settings-controller.php(443): WC_REST_Payments_Settings_Controller->update_enabled_payment_methods(Object(WP_REST_Request))
+#5 /home2/livsweet/public_html/wp-includes/rest-api/class-wp-rest-server.php(1171): WC_REST_Payments_Settings_Controller->update_settings(Object(WP_REST_Request))
+#6 /home2/livsweet/public_html/wp-includes/rest-api/class-wp-rest-server.php(1018): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wc/v3/payments...', Array, NULL)
+#7 /home2/livsweet/public_html/wp-includes/rest-api/class-wp-rest-server.php(442): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#8 /home2/livsweet/public_html/wp-includes/rest-api.php(410): WP_REST_Server->serve_request('/wc/v3/payments...')
+#9 /home2/livsweet/public_html/wp-includes/class-wp-hook.php(308): rest_api_loaded(Object(WP))
+#10 /home2/livsweet/public_html/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#11 /home2/livsweet/public_html/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#12 /home2/livsweet/public_html/wp-includes/class-wp.php(399): do_action_ref_array('parse_request', Array)
+#13 /home2/livsweet/public_html/wp-includes/class-wp.php(780): WP->parse_request('')
+#14 /home2/livsweet/public_html/wp-includes/functions.php(1332): WP->main('')
+#15 /home2/livsweet/public_html/wp-blog-header.php(16): wp()
+#16 /home2/livsweet/public_html/index.php(17): require('/home2/livsweet...')
+#17 {main}
+  thrown in /home2/livsweet/public_html/wp-content/plugins/woocommerce-payments/includes/wc-payment-api/class-wc-payments-api-client.php on line 2249
+[10-Dec-2022 01:16:55 UTC] Payment gateway with handle 'wc-payment-method-cod' has been deactivated in Cart and Checkout blocks because its dependency 'wc-blocks-registry' is not registered. Read the docs about registering assets for payment methods: https://github.com/woocommerce/woocommerce-blocks/blob/060f63c04f0f34f645200b5d4da9212125c49177/docs/third-party-developers/extensibility/checkout-payment-methods/payment-method-integration.md#registering-assets
+[10-Dec-2022 01:17:14 UTC] Payment gateway with handle 'wc-payment-method-cod' has been deactivated in Cart and Checkout blocks because its dependency 'wc-blocks-registry' is not registered. Read the docs about registering assets for payment methods: https://github.com/woocommerce/woocommerce-blocks/blob/060f63c04f0f34f645200b5d4da9212125c49177/docs/third-party-developers/extensibility/checkout-payment-methods/payment-method-integration.md#registering-assets
+[10-Dec-2022 01:17:47 UTC] Payment gateway with handle 'wc-payment-method-cod' has been deactivated in Cart and Checkout blocks because its dependency 'wc-blocks-registry' is not registered. Read the docs about registering assets for payment methods: https://github.com/woocommerce/woocommerce-blocks/blob/060f63c04f0f34f645200b5d4da9212125c49177/docs/third-party-developers/extensibility/checkout-payment-methods/payment-method-integration.md#registering-assets
+[10-Dec-2022 01:18:44 UTC] Payment gateway with handle 'wc-payment-method-cod' has been deactivated in Cart and Checkout blocks because its dependency 'wc-blocks-registry' is not registered. Read the docs about registering assets for payment methods: https://github.com/woocommerce/woocommerce-blocks/blob/060f63c04f0f34f645200b5d4da9212125c49177/docs/third-party-developers/extensibility/checkout-payment-methods/payment-method-integration.md#registering-assets
+[10-Dec-2022 01:19:19 UTC] Payment gateway with handle 'wc-payment-method-cod' has been deactivated in Cart and Checkout blocks because its dependency 'wc-blocks-registry' is not registered. Read the docs about registering assets for payment methods: https://github.com/woocommerce/woocommerce-blocks/blob/060f63c04f0f34f645200b5d4da9212125c49177/docs/third-party-developers/extensibility/checkout-payment-methods/payment-method-integration.md#registering-assets
+[10-Dec-2022 11:13:52 UTC] Payment gateway with handle 'wc-payment-method-cod' has been deactivated in Cart and Checkout blocks because its dependency 'wc-blocks-registry' is not registered. Read the docs about registering assets for payment methods: https://github.com/woocommerce/woocommerce-blocks/blob/060f63c04f0f34f645200b5d4da9212125c49177/docs/third-party-developers/extensibility/checkout-payment-methods/payment-method-integration.md#registering-assets
+[10-Dec-2022 11:14:19 UTC] Payment gateway with handle 'wc-payment-method-cod' has been deactivated in Cart and Checkout blocks because its dependency 'wc-blocks-registry' is not registered. Read the docs about registering assets for payment methods: https://github.com/woocommerce/woocommerce-blocks/blob/060f63c04f0f34f645200b5d4da9212125c49177/docs/third-party-developers/extensibility/checkout-payment-methods/payment-method-integration.md#registering-assets
+[10-Dec-2022 11:14:39 UTC] Payment gateway with handle 'wc-payment-method-cod' has been deactivated in Cart and Checkout blocks because its dependency 'wc-blocks-registry' is not registered. Read the docs about registering assets for payment methods: https://github.com/woocommerce/woocommerce-blocks/blob/060f63c04f0f34f645200b5d4da9212125c49177/docs/third-party-developers/extensibility/checkout-payment-methods/payment-method-integration.md#registering-assets
+[10-Dec-2022 11:14:52 UTC] Payment gateway with handle 'wc-payment-method-cod' has been deactivated in Cart and Checkout blocks because its dependency 'wc-blocks-registry' is not registered. Read the docs about registering assets for payment methods: https://github.com/woocommerce/woocommerce-blocks/blob/060f63c04f0f34f645200b5d4da9212125c49177/docs/third-party-developers/extensibility/checkout-payment-methods/payment-method-integration.md#registering-assets
+[10-Dec-2022 11:15:18 UTC] Payment gateway with handle 'wc-payment-method-cod' has been deactivated in Cart and Checkout blocks because its dependency 'wc-blocks-registry' is not registered. Read the docs about registering assets for payment methods: https://github.com/woocommerce/woocommerce-blocks/blob/060f63c04f0f34f645200b5d4da9212125c49177/docs/third-party-developers/extensibility/checkout-payment-methods/payment-method-integration.md#registering-assets
+[10-Dec-2022 21:46:27 UTC] PHP Fatal error:  Uncaught ValueError: Unknown format specifier "C" in /home2/livsweet/public_html/wp-includes/nav-menu-template.php:291
+Stack trace:
+#0 /home2/livsweet/public_html/wp-includes/nav-menu-template.php(291): sprintf('<ul id="%1$s" c...', 'menu-sitemenu', 'elementskit-nav...', '<li id="menu-it...')
+#1 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/widgets/nav-menu/nav-menu.php(1597): wp_nav_menu(Object(stdClass))
+#2 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/widgets/nav-menu/nav-menu.php(1516): Elementor\ElementsKit_Widget_Nav_Menu->render_raw()
+#3 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/controls-stack.php(2266): Elementor\ElementsKit_Widget_Nav_Menu->render()
+#4 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(609): Elementor\Controls_Stack->render_by_mode()
+#5 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(750): Elementor\Widget_Base->render_content()
+#6 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(449): Elementor\Widget_Base->print_content()
+#7 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(1348): Elementor\Element_Base->print_element()
+#8 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(449): Elementor\Element_Base->print_content()
+#9 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(1348): Elementor\Element_Base->print_element()
+#10 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(449): Elementor\Element_Base->print_content()
+#11 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/document.php(1669): Elementor\Element_Base->print_element()
+#12 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/document.php(1095): Elementor\Core\Base\Document->print_elements(Array)
+#13 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/frontend.php(1153): Elementor\Core\Base\Document->print_elements_with_wrapper(Array)
+#14 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/frontend.php(1048): Elementor\Frontend->get_builder_content(71)
+#15 /home2/livsweet/public_html/wp-includes/class-wp-hook.php(308): Elementor\Frontend->apply_builder_in_content('<a href="https:...')
+#16 /home2/livsweet/public_html/wp-includes/plugin.php(205): WP_Hook->apply_filters('<a href="https:...', Array)
+#17 /home2/livsweet/public_html/wp-includes/post-template.php(255): apply_filters('the_content', '<a href="https:...')
+#18 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/module.php(190): the_content()
+#19 [internal function]: Elementor\Modules\PageTemplates\Module->print_callback()
+#20 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/module.php(207): call_user_func(Array)
+#21 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/templates/canvas.php(38): Elementor\Modules\PageTemplates\Module->print_content()
+#22 /home2/livsweet/public_html/wp-includes/template-loader.php(106): include('/home2/livsweet...')
+#23 /home2/livsweet/public_html/wp-blog-header.php(19): require_once('/home2/livsweet...')
+#24 /home2/livsweet/public_html/index.php(17): require('/home2/livsweet...')
+#25 {main}
+  thrown in /home2/livsweet/public_html/wp-includes/nav-menu-template.php on line 291
+[13-Dec-2022 00:37:09 UTC] PHP Fatal error:  Uncaught ValueError: Unknown format specifier "C" in /home2/livsweet/public_html/wp-includes/nav-menu-template.php:291
+Stack trace:
+#0 /home2/livsweet/public_html/wp-includes/nav-menu-template.php(291): sprintf('<ul id="%1$s" c...', 'menu-sitemenu', 'elementskit-nav...', '<li id="menu-it...')
+#1 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/widgets/nav-menu/nav-menu.php(1597): wp_nav_menu(Object(stdClass))
+#2 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/widgets/nav-menu/nav-menu.php(1516): Elementor\ElementsKit_Widget_Nav_Menu->render_raw()
+#3 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/controls-stack.php(2266): Elementor\ElementsKit_Widget_Nav_Menu->render()
+#4 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(609): Elementor\Controls_Stack->render_by_mode()
+#5 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(750): Elementor\Widget_Base->render_content()
+#6 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(449): Elementor\Widget_Base->print_content()
+#7 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(1348): Elementor\Element_Base->print_element()
+#8 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(449): Elementor\Element_Base->print_content()
+#9 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(1348): Elementor\Element_Base->print_element()
+#10 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(449): Elementor\Element_Base->print_content()
+#11 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/document.php(1669): Elementor\Element_Base->print_element()
+#12 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/document.php(1095): Elementor\Core\Base\Document->print_elements(Array)
+#13 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/frontend.php(1153): Elementor\Core\Base\Document->print_elements_with_wrapper(Array)
+#14 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/frontend.php(1048): Elementor\Frontend->get_builder_content(71)
+#15 /home2/livsweet/public_html/wp-includes/class-wp-hook.php(308): Elementor\Frontend->apply_builder_in_content('<a href="https:...')
+#16 /home2/livsweet/public_html/wp-includes/plugin.php(205): WP_Hook->apply_filters('<a href="https:...', Array)
+#17 /home2/livsweet/public_html/wp-includes/post-template.php(255): apply_filters('the_content', '<a href="https:...')
+#18 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/module.php(190): the_content()
+#19 [internal function]: Elementor\Modules\PageTemplates\Module->print_callback()
+#20 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/module.php(207): call_user_func(Array)
+#21 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/templates/canvas.php(38): Elementor\Modules\PageTemplates\Module->print_content()
+#22 /home2/livsweet/public_html/wp-includes/template-loader.php(106): include('/home2/livsweet...')
+#23 /home2/livsweet/public_html/wp-blog-header.php(19): require_once('/home2/livsweet...')
+#24 /home2/livsweet/public_html/index.php(17): require('/home2/livsweet...')
+#25 {main}
+  thrown in /home2/livsweet/public_html/wp-includes/nav-menu-template.php on line 291
+[15-Dec-2022 00:08:00 UTC] PHP Fatal error:  Uncaught Error: Class "Elementor\Control_Text" not found in /home2/livsweet/public_html/wp-content/plugins/elementor/includes/managers/controls.php:436
+Stack trace:
+#0 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/managers/controls.php(589): Elementor\Controls_Manager->register_controls()
+#1 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/managers/controls.php(608): Elementor\Controls_Manager->get_controls()
+#2 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/managers/controls.php(779): Elementor\Controls_Manager->get_control('section')
+#3 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/controls-stack.php(421): Elementor\Controls_Manager->add_control_to_stack(Object(Elementor\Core\DocumentTypes\Post), 'document_settin...', Array, Array)
+#4 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/controls-stack.php(1518): Elementor\Controls_Stack->add_control('document_settin...', Array)
+#5 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/document.php(1677): Elementor\Controls_Stack->start_controls_section('document_settin...', Array)
+#6 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/document.php(664): Elementor\Core\Base\Document->register_document_controls()
+#7 /home2/livsweet/public_html/wp-content/plugins/elementor/core/document-types/page-base.php(61): Elementor\Core\Base\Document->register_controls()
+#8 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/controls-stack.php(2327): Elementor\Core\DocumentTypes\PageBase->register_controls()
+#9 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/controls-stack.php(496): Elementor\Controls_Stack->init_controls()
+#10 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/controls-stack.php(300): Elementor\Controls_Stack->get_stack()
+#11 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/controls-stack.php(2414): Elementor\Controls_Stack->get_controls()
+#12 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/controls-stack.php(1107): Elementor\Controls_Stack->sanitize_settings(Array)
+#13 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/controls-stack.php(2161): Elementor\Controls_Stack->get_data('settings')
+#14 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/base-object.php(142): Elementor\Controls_Stack->get_init_settings()
+#15 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/base-object.php(40): Elementor\Core\Base\Base_Object->ensure_settings()
+#16 /home2/livsweet/public_html/wp-content/plugins/essential-addons-for-elementor-lite/includes/Classes/Elements_Manager.php(136): Elementor\Core\Base\Base_Object->get_settings('eael_custom_js')
+#17 /home2/livsweet/public_html/wp-content/plugins/essential-addons-for-elementor-lite/includes/Classes/Asset_Builder.php(240): Essential_Addons_Elementor\Classes\Elements_Manager->get_element_list('2921')
+#18 /home2/livsweet/public_html/wp-includes/class-wp-hook.php(310): Essential_Addons_Elementor\Classes\Asset_Builder->load_asset_per_file('post-2921.css')
+#19 /home2/livsweet/public_html/wp-includes/plugin.php(205): WP_Hook->apply_filters('post-2921.css', Array)
+#20 /home2/livsweet/public_html/wp-content/plugins/elementor/core/files/base.php(92): apply_filters('elementor/files...', 'post-2921.css', Object(Elementor\Core\Files\CSS\Post))
+#21 /home2/livsweet/public_html/wp-content/plugins/elementor/core/files/css/post.php(57): Elementor\Core\Files\Base->__construct('post-2921.css')
+#22 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/helpers/utils.php(287): Elementor\Core\Files\CSS\Post->__construct(2921)
+#23 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/modules/header-footer/activator.php(89): ElementsKit_Lite\Utils::render_elementor_content_css(2921)
+#24 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/modules/header-footer/activator.php(69): ElementsKit_Lite\Modules\Header_Footer\Activator::template_ids()
+#25 /home2/livsweet/public_html/wp-includes/class-wp-hook.php(308): ElementsKit_Lite\Modules\Header_Footer\Activator->hooks(Object(WP))
+#26 /home2/livsweet/public_html/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#27 /home2/livsweet/public_html/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#28 /home2/livsweet/public_html/wp-includes/class-wp.php(797): do_action_ref_array('wp', Array)
+#29 /home2/livsweet/public_html/wp-includes/functions.php(1332): WP->main('')
+#30 /home2/livsweet/public_html/wp-blog-header.php(16): wp()
+#31 /home2/livsweet/public_html/index.php(17): require('/home2/livsweet...')
+#32 {main}
+  thrown in /home2/livsweet/public_html/wp-content/plugins/elementor/includes/managers/controls.php on line 436
+[15-Dec-2022 00:08:01 UTC] PHP Warning:  include_once(/home2/livsweet/public_html/wp-content/plugins/bluehost-wordpress-plugin/bluehost-wordpress-plugin.php): Failed to open stream: No such file or directory in /home2/livsweet/public_html/wp-settings.php on line 447
+[15-Dec-2022 00:08:01 UTC] PHP Warning:  include_once(): Failed opening '/home2/livsweet/public_html/wp-content/plugins/bluehost-wordpress-plugin/bluehost-wordpress-plugin.php' for inclusion (include_path='.:/opt/cpanel/ea-php80/root/usr/share/pear') in /home2/livsweet/public_html/wp-settings.php on line 447
+[15-Dec-2022 00:08:02 UTC] PHP Warning:  require_once(bluehost-wordpress-pluginclasses/class-jetpack-woocommerce-analytics-universal.php): Failed to open stream: No such file or directory in /home2/livsweet/public_html/wp-content/plugins/jetpack/modules/woocommerce-analytics/class-jetpack-woocommerce-analytics.php on line 12
+[15-Dec-2022 00:08:02 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'bluehost-wordpress-pluginclasses/class-jetpack-woocommerce-analytics-universal.php' (include_path='.:/opt/cpanel/ea-php80/root/usr/share/pear') in /home2/livsweet/public_html/wp-content/plugins/jetpack/modules/woocommerce-analytics/class-jetpack-woocommerce-analytics.php:12
+Stack trace:
+#0 /home2/livsweet/public_html/wp-content/plugins/jetpack/modules/woocommerce-analytics.php(20): require_once()
+#1 /home2/livsweet/public_html/wp-content/plugins/jetpack/modules/woocommerce-analytics.php(22): jetpack_load_woocommerce_analytics()
+#2 /home2/livsweet/public_html/wp-content/plugins/jetpack/class.jetpack.php(1862): include_once('/home2/livsweet...')
+#3 /home2/livsweet/public_html/wp-includes/class-wp-hook.php(308): Jetpack::load_modules('')
+#4 /home2/livsweet/public_html/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#5 /home2/livsweet/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /home2/livsweet/public_html/wp-settings.php(480): do_action('plugins_loaded')
+#7 /home2/livsweet/public_html/wp-config.php(101): require_once('/home2/livsweet...')
+#8 /home2/livsweet/public_html/wp-load.php(50): require_once('/home2/livsweet...')
+#9 /home2/livsweet/public_html/wp-blog-header.php(13): require_once('/home2/livsweet...')
+#10 /home2/livsweet/public_html/index.php(17): require('/home2/livsweet...')
+#11 {main}
+  thrown in /home2/livsweet/public_html/wp-content/plugins/jetpack/modules/woocommerce-analytics/class-jetpack-woocommerce-analytics.php on line 12
+[15-Dec-2022 16:48:22 UTC] PHP Fatal error:  Uncaught ValueError: Unknown format specifier "C" in /home2/livsweet/public_html/wp-includes/nav-menu-template.php:291
+Stack trace:
+#0 /home2/livsweet/public_html/wp-includes/nav-menu-template.php(291): sprintf('<ul id="%1$s" c...', 'menu-sitemenu', 'elementskit-nav...', '<li id="menu-it...')
+#1 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/widgets/nav-menu/nav-menu.php(1597): wp_nav_menu(Object(stdClass))
+#2 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/widgets/nav-menu/nav-menu.php(1516): Elementor\ElementsKit_Widget_Nav_Menu->render_raw()
+#3 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/controls-stack.php(2266): Elementor\ElementsKit_Widget_Nav_Menu->render()
+#4 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(609): Elementor\Controls_Stack->render_by_mode()
+#5 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(750): Elementor\Widget_Base->render_content()
+#6 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(449): Elementor\Widget_Base->print_content()
+#7 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(1348): Elementor\Element_Base->print_element()
+#8 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(449): Elementor\Element_Base->print_content()
+#9 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(1348): Elementor\Element_Base->print_element()
+#10 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(449): Elementor\Element_Base->print_content()
+#11 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/document.php(1669): Elementor\Element_Base->print_element()
+#12 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/document.php(1095): Elementor\Core\Base\Document->print_elements(Array)
+#13 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/frontend.php(1153): Elementor\Core\Base\Document->print_elements_with_wrapper(Array)
+#14 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/frontend.php(1048): Elementor\Frontend->get_builder_content(71)
+#15 /home2/livsweet/public_html/wp-includes/class-wp-hook.php(308): Elementor\Frontend->apply_builder_in_content('<a href="https:...')
+#16 /home2/livsweet/public_html/wp-includes/plugin.php(205): WP_Hook->apply_filters('<a href="https:...', Array)
+#17 /home2/livsweet/public_html/wp-includes/post-template.php(255): apply_filters('the_content', '<a href="https:...')
+#18 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/module.php(190): the_content()
+#19 [internal function]: Elementor\Modules\PageTemplates\Module->print_callback()
+#20 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/module.php(207): call_user_func(Array)
+#21 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/templates/canvas.php(38): Elementor\Modules\PageTemplates\Module->print_content()
+#22 /home2/livsweet/public_html/wp-includes/template-loader.php(106): include('/home2/livsweet...')
+#23 /home2/livsweet/public_html/wp-blog-header.php(19): require_once('/home2/livsweet...')
+#24 /home2/livsweet/public_html/index.php(17): require('/home2/livsweet...')
+#25 {main}
+  thrown in /home2/livsweet/public_html/wp-includes/nav-menu-template.php on line 291
+[18-Dec-2022 02:16:08 UTC] PHP Fatal error:  Uncaught ValueError: Unknown format specifier "C" in /home2/livsweet/public_html/wp-includes/nav-menu-template.php:291
+Stack trace:
+#0 /home2/livsweet/public_html/wp-includes/nav-menu-template.php(291): sprintf('<ul id="%1$s" c...', 'menu-sitemenu', 'elementskit-nav...', '<li id="menu-it...')
+#1 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/widgets/nav-menu/nav-menu.php(1597): wp_nav_menu(Object(stdClass))
+#2 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/widgets/nav-menu/nav-menu.php(1516): Elementor\ElementsKit_Widget_Nav_Menu->render_raw()
+#3 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/controls-stack.php(2266): Elementor\ElementsKit_Widget_Nav_Menu->render()
+#4 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(609): Elementor\Controls_Stack->render_by_mode()
+#5 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(750): Elementor\Widget_Base->render_content()
+#6 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(449): Elementor\Widget_Base->print_content()
+#7 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(1348): Elementor\Element_Base->print_element()
+#8 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(449): Elementor\Element_Base->print_content()
+#9 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(1348): Elementor\Element_Base->print_element()
+#10 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(449): Elementor\Element_Base->print_content()
+#11 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/document.php(1669): Elementor\Element_Base->print_element()
+#12 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/document.php(1095): Elementor\Core\Base\Document->print_elements(Array)
+#13 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/frontend.php(1153): Elementor\Core\Base\Document->print_elements_with_wrapper(Array)
+#14 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/frontend.php(1048): Elementor\Frontend->get_builder_content(71)
+#15 /home2/livsweet/public_html/wp-includes/class-wp-hook.php(308): Elementor\Frontend->apply_builder_in_content('<a href="https:...')
+#16 /home2/livsweet/public_html/wp-includes/plugin.php(205): WP_Hook->apply_filters('<a href="https:...', Array)
+#17 /home2/livsweet/public_html/wp-includes/post-template.php(255): apply_filters('the_content', '<a href="https:...')
+#18 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/module.php(190): the_content()
+#19 [internal function]: Elementor\Modules\PageTemplates\Module->print_callback()
+#20 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/module.php(207): call_user_func(Array)
+#21 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/templates/canvas.php(38): Elementor\Modules\PageTemplates\Module->print_content()
+#22 /home2/livsweet/public_html/wp-includes/template-loader.php(106): include('/home2/livsweet...')
+#23 /home2/livsweet/public_html/wp-blog-header.php(19): require_once('/home2/livsweet...')
+#24 /home2/livsweet/public_html/index.php(17): require('/home2/livsweet...')
+#25 {main}
+  thrown in /home2/livsweet/public_html/wp-includes/nav-menu-template.php on line 291
+[19-Dec-2022 16:57:16 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query DELETE FROM `VPl_options` WHERE `option_name` = '_transient_global_styles_hello-elementor' made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/hello-elementor/index.php'), get_header, do_action('get_header'), WP_Hook->do_action, WP_Hook->apply_filters, ElementsKit_Lite\Modules\Header_Footer\Theme_Hooks\Theme_Support->get_header, require('/plugins/elementskit-lite/modules/header-footer/views/theme-support-header.php'), wp_head, do_action('wp_head'), WP_Hook->do_action, WP_Hook->apply_filters, wp_enqueue_scripts, do_action('wp_enqueue_scripts'), WP_Hook->do_action, WP_Hook->apply_filters, wp_enqueue_global_styles, wp_get_global_stylesheet, get_transient, delete_option
+[20-Dec-2022 01:41:37 UTC] Cron reschedule event error for hook: bh_data_sync_cron, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"minutely","args":[],"interval":60}
+[20-Dec-2022 01:41:37 UTC] Cron unschedule event error for hook: bh_data_sync_cron, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"minutely","args":[],"interval":60}
+[20-Dec-2022 01:41:37 UTC] Cron reschedule event error for hook: jetpack_sync_full_cron, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"jetpack_sync_interval","args":[],"interval":300}
+[20-Dec-2022 01:41:37 UTC] Cron unschedule event error for hook: jetpack_sync_full_cron, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"jetpack_sync_interval","args":[],"interval":300}
+[20-Dec-2022 01:41:37 UTC] Cron reschedule event error for hook: elementor/tracker/send_event, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"daily","args":[],"interval":86400}
+[20-Dec-2022 01:41:37 UTC] Cron unschedule event error for hook: elementor/tracker/send_event, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"daily","args":[],"interval":86400}
+[20-Dec-2022 01:41:37 UTC] Cron reschedule event error for hook: jetpack_sync_cron, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"jetpack_sync_interval","args":[],"interval":300}
+[20-Dec-2022 01:41:37 UTC] Cron unschedule event error for hook: jetpack_sync_cron, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"jetpack_sync_interval","args":[],"interval":300}
+[20-Dec-2022 01:41:37 UTC] Cron reschedule event error for hook: wp_scheduled_auto_draft_delete, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"daily","args":[],"interval":86400}
+[20-Dec-2022 03:07:10 UTC] Cron reschedule event error for hook: bh_data_sync_cron, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"minutely","args":[],"interval":60}
+[20-Dec-2022 13:31:41 UTC] PHP Fatal error:  Uncaught ValueError: Unknown format specifier "C" in /home2/livsweet/public_html/wp-includes/nav-menu-template.php:291
+Stack trace:
+#0 /home2/livsweet/public_html/wp-includes/nav-menu-template.php(291): sprintf('<ul id="%1$s" c...', 'menu-sitemenu', 'elementskit-nav...', '<li id="menu-it...')
+#1 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/widgets/nav-menu/nav-menu.php(1597): wp_nav_menu(Object(stdClass))
+#2 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/widgets/nav-menu/nav-menu.php(1516): Elementor\ElementsKit_Widget_Nav_Menu->render_raw()
+#3 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/controls-stack.php(2266): Elementor\ElementsKit_Widget_Nav_Menu->render()
+#4 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(609): Elementor\Controls_Stack->render_by_mode()
+#5 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(750): Elementor\Widget_Base->render_content()
+#6 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(449): Elementor\Widget_Base->print_content()
+#7 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(1348): Elementor\Element_Base->print_element()
+#8 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(449): Elementor\Element_Base->print_content()
+#9 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(1348): Elementor\Element_Base->print_element()
+#10 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(449): Elementor\Element_Base->print_content()
+#11 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/document.php(1669): Elementor\Element_Base->print_element()
+#12 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/document.php(1095): Elementor\Core\Base\Document->print_elements(Array)
+#13 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/frontend.php(1153): Elementor\Core\Base\Document->print_elements_with_wrapper(Array)
+#14 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/frontend.php(1048): Elementor\Frontend->get_builder_content(71)
+#15 /home2/livsweet/public_html/wp-includes/class-wp-hook.php(308): Elementor\Frontend->apply_builder_in_content('<a href="https:...')
+#16 /home2/livsweet/public_html/wp-includes/plugin.php(205): WP_Hook->apply_filters('<a href="https:...', Array)
+#17 /home2/livsweet/public_html/wp-includes/post-template.php(255): apply_filters('the_content', '<a href="https:...')
+#18 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/module.php(190): the_content()
+#19 [internal function]: Elementor\Modules\PageTemplates\Module->print_callback()
+#20 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/module.php(207): call_user_func(Array)
+#21 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/templates/canvas.php(38): Elementor\Modules\PageTemplates\Module->print_content()
+#22 /home2/livsweet/public_html/wp-includes/template-loader.php(106): include('/home2/livsweet...')
+#23 /home2/livsweet/public_html/wp-blog-header.php(19): require_once('/home2/livsweet...')
+#24 /home2/livsweet/public_html/index.php(17): require('/home2/livsweet...')
+#25 {main}
+  thrown in /home2/livsweet/public_html/wp-includes/nav-menu-template.php on line 291
+[22-Dec-2022 00:20:20 UTC] PHP Warning:  rename(/tmp/elementor.3.9.2-eByL2t.tmp,/tmp/elementor.3.9.2.zip): Operation not permitted in /home2/livsweet/public_html/wp-admin/includes/file.php on line 1204
+[22-Dec-2022 00:20:20 UTC] PHP Warning:  unlink(/tmp/elementor.3.9.2.zip): Operation not permitted in /home2/livsweet/public_html/wp-admin/includes/file.php on line 1209
+[22-Dec-2022 19:35:44 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home2/livsweet/public_html/wp-content/db-error.php on line 2
+[22-Dec-2022 19:35:44 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home2/livsweet/public_html/wp-content/db-error.php on line 3
+[22-Dec-2022 19:35:44 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home2/livsweet/public_html/wp-content/db-error.php on line 4
+[23-Dec-2022 14:30:05 UTC] PHP Fatal error:  Uncaught ValueError: Unknown format specifier "C" in /home2/livsweet/public_html/wp-includes/nav-menu-template.php:291
+Stack trace:
+#0 /home2/livsweet/public_html/wp-includes/nav-menu-template.php(291): sprintf('<ul id="%1$s" c...', 'menu-sitemenu', 'elementskit-nav...', '<li id="menu-it...')
+#1 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/widgets/nav-menu/nav-menu.php(1597): wp_nav_menu(Object(stdClass))
+#2 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/widgets/nav-menu/nav-menu.php(1516): Elementor\ElementsKit_Widget_Nav_Menu->render_raw()
+#3 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/controls-stack.php(2266): Elementor\ElementsKit_Widget_Nav_Menu->render()
+#4 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(609): Elementor\Controls_Stack->render_by_mode()
+#5 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(750): Elementor\Widget_Base->render_content()
+#6 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(449): Elementor\Widget_Base->print_content()
+#7 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(1348): Elementor\Element_Base->print_element()
+#8 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(449): Elementor\Element_Base->print_content()
+#9 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(1348): Elementor\Element_Base->print_element()
+#10 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(449): Elementor\Element_Base->print_content()
+#11 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/document.php(1669): Elementor\Element_Base->print_element()
+#12 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/document.php(1095): Elementor\Core\Base\Document->print_elements(Array)
+#13 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/frontend.php(1153): Elementor\Core\Base\Document->print_elements_with_wrapper(Array)
+#14 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/frontend.php(1048): Elementor\Frontend->get_builder_content(71)
+#15 /home2/livsweet/public_html/wp-includes/class-wp-hook.php(308): Elementor\Frontend->apply_builder_in_content('<a href="https:...')
+#16 /home2/livsweet/public_html/wp-includes/plugin.php(205): WP_Hook->apply_filters('<a href="https:...', Array)
+#17 /home2/livsweet/public_html/wp-includes/post-template.php(255): apply_filters('the_content', '<a href="https:...')
+#18 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/module.php(190): the_content()
+#19 [internal function]: Elementor\Modules\PageTemplates\Module->print_callback()
+#20 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/module.php(207): call_user_func(Array)
+#21 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/templates/canvas.php(38): Elementor\Modules\PageTemplates\Module->print_content()
+#22 /home2/livsweet/public_html/wp-includes/template-loader.php(106): include('/home2/livsweet...')
+#23 /home2/livsweet/public_html/wp-blog-header.php(19): require_once('/home2/livsweet...')
+#24 /home2/livsweet/public_html/index.php(17): require('/home2/livsweet...')
+#25 {main}
+  thrown in /home2/livsweet/public_html/wp-includes/nav-menu-template.php on line 291
+[26-Dec-2022 09:01:01 UTC] Payment gateway with handle 'wc-payment-method-cod' has been deactivated in Cart and Checkout blocks because its dependency 'wc-blocks-registry' is not registered. Read the docs about registering assets for payment methods: https://github.com/woocommerce/woocommerce-blocks/blob/060f63c04f0f34f645200b5d4da9212125c49177/docs/third-party-developers/extensibility/checkout-payment-methods/payment-method-integration.md#registering-assets
+[26-Dec-2022 09:01:21 UTC] Payment gateway with handle 'wc-payment-method-cod' has been deactivated in Cart and Checkout blocks because its dependency 'wc-blocks-registry' is not registered. Read the docs about registering assets for payment methods: https://github.com/woocommerce/woocommerce-blocks/blob/060f63c04f0f34f645200b5d4da9212125c49177/docs/third-party-developers/extensibility/checkout-payment-methods/payment-method-integration.md#registering-assets
+[26-Dec-2022 09:01:55 UTC] Payment gateway with handle 'wc-payment-method-cod' has been deactivated in Cart and Checkout blocks because its dependency 'wc-blocks-registry' is not registered. Read the docs about registering assets for payment methods: https://github.com/woocommerce/woocommerce-blocks/blob/060f63c04f0f34f645200b5d4da9212125c49177/docs/third-party-developers/extensibility/checkout-payment-methods/payment-method-integration.md#registering-assets
+[26-Dec-2022 09:02:07 UTC] Payment gateway with handle 'wc-payment-method-cod' has been deactivated in Cart and Checkout blocks because its dependency 'wc-blocks-registry' is not registered. Read the docs about registering assets for payment methods: https://github.com/woocommerce/woocommerce-blocks/blob/060f63c04f0f34f645200b5d4da9212125c49177/docs/third-party-developers/extensibility/checkout-payment-methods/payment-method-integration.md#registering-assets
+[26-Dec-2022 09:02:17 UTC] Payment gateway with handle 'wc-payment-method-cod' has been deactivated in Cart and Checkout blocks because its dependency 'wc-blocks-registry' is not registered. Read the docs about registering assets for payment methods: https://github.com/woocommerce/woocommerce-blocks/blob/060f63c04f0f34f645200b5d4da9212125c49177/docs/third-party-developers/extensibility/checkout-payment-methods/payment-method-integration.md#registering-assets
+[28-Dec-2022 11:25:20 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query DELETE FROM `VPl_options` WHERE `option_name` = '_transient_global_styles_hello-elementor' made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/hello-elementor/index.php'), get_header, do_action('get_header'), WP_Hook->do_action, WP_Hook->apply_filters, ElementsKit_Lite\Modules\Header_Footer\Theme_Hooks\Theme_Support->get_header, require('/plugins/elementskit-lite/modules/header-footer/views/theme-support-header.php'), wp_head, do_action('wp_head'), WP_Hook->do_action, WP_Hook->apply_filters, wp_enqueue_scripts, do_action('wp_enqueue_scripts'), WP_Hook->do_action, WP_Hook->apply_filters, wp_enqueue_global_styles, wp_get_global_stylesheet, get_transient, delete_option
+[29-Dec-2022 01:57:40 UTC] PHP Fatal error:  Uncaught ValueError: Unknown format specifier "C" in /home2/livsweet/public_html/wp-includes/nav-menu-template.php:291
+Stack trace:
+#0 /home2/livsweet/public_html/wp-includes/nav-menu-template.php(291): sprintf('<ul id="%1$s" c...', 'menu-sitemenu', 'elementskit-nav...', '<li id="menu-it...')
+#1 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/widgets/nav-menu/nav-menu.php(1597): wp_nav_menu(Object(stdClass))
+#2 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/widgets/nav-menu/nav-menu.php(1516): Elementor\ElementsKit_Widget_Nav_Menu->render_raw()
+#3 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/controls-stack.php(2266): Elementor\ElementsKit_Widget_Nav_Menu->render()
+#4 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(609): Elementor\Controls_Stack->render_by_mode()
+#5 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(750): Elementor\Widget_Base->render_content()
+#6 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(449): Elementor\Widget_Base->print_content()
+#7 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(1348): Elementor\Element_Base->print_element()
+#8 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(449): Elementor\Element_Base->print_content()
+#9 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(1348): Elementor\Element_Base->print_element()
+#10 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(449): Elementor\Element_Base->print_content()
+#11 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/document.php(1669): Elementor\Element_Base->print_element()
+#12 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/document.php(1095): Elementor\Core\Base\Document->print_elements(Array)
+#13 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/frontend.php(1153): Elementor\Core\Base\Document->print_elements_with_wrapper(Array)
+#14 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/frontend.php(1048): Elementor\Frontend->get_builder_content(71)
+#15 /home2/livsweet/public_html/wp-includes/class-wp-hook.php(308): Elementor\Frontend->apply_builder_in_content('<a href="https:...')
+#16 /home2/livsweet/public_html/wp-includes/plugin.php(205): WP_Hook->apply_filters('<a href="https:...', Array)
+#17 /home2/livsweet/public_html/wp-includes/post-template.php(255): apply_filters('the_content', '<a href="https:...')
+#18 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/module.php(190): the_content()
+#19 [internal function]: Elementor\Modules\PageTemplates\Module->print_callback()
+#20 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/module.php(207): call_user_func(Array)
+#21 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/templates/canvas.php(38): Elementor\Modules\PageTemplates\Module->print_content()
+#22 /home2/livsweet/public_html/wp-includes/template-loader.php(106): include('/home2/livsweet...')
+#23 /home2/livsweet/public_html/wp-blog-header.php(19): require_once('/home2/livsweet...')
+#24 /home2/livsweet/public_html/index.php(17): require('/home2/livsweet...')
+#25 {main}
+  thrown in /home2/livsweet/public_html/wp-includes/nav-menu-template.php on line 291
+[02-Jan-2023 04:39:40 UTC] PHP Fatal error:  Uncaught ValueError: Unknown format specifier "C" in /home2/livsweet/public_html/wp-includes/nav-menu-template.php:291
+Stack trace:
+#0 /home2/livsweet/public_html/wp-includes/nav-menu-template.php(291): sprintf('<ul id="%1$s" c...', 'menu-sitemenu', 'elementskit-nav...', '<li id="menu-it...')
+#1 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/widgets/nav-menu/nav-menu.php(1597): wp_nav_menu(Object(stdClass))
+#2 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/widgets/nav-menu/nav-menu.php(1516): Elementor\ElementsKit_Widget_Nav_Menu->render_raw()
+#3 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/controls-stack.php(2266): Elementor\ElementsKit_Widget_Nav_Menu->render()
+#4 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(609): Elementor\Controls_Stack->render_by_mode()
+#5 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(750): Elementor\Widget_Base->render_content()
+#6 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(449): Elementor\Widget_Base->print_content()
+#7 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(1348): Elementor\Element_Base->print_element()
+#8 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(449): Elementor\Element_Base->print_content()
+#9 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(1348): Elementor\Element_Base->print_element()
+#10 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(449): Elementor\Element_Base->print_content()
+#11 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/document.php(1669): Elementor\Element_Base->print_element()
+#12 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/document.php(1095): Elementor\Core\Base\Document->print_elements(Array)
+#13 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/frontend.php(1153): Elementor\Core\Base\Document->print_elements_with_wrapper(Array)
+#14 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/frontend.php(1048): Elementor\Frontend->get_builder_content(71)
+#15 /home2/livsweet/public_html/wp-includes/class-wp-hook.php(308): Elementor\Frontend->apply_builder_in_content('<a href="https:...')
+#16 /home2/livsweet/public_html/wp-includes/plugin.php(205): WP_Hook->apply_filters('<a href="https:...', Array)
+#17 /home2/livsweet/public_html/wp-includes/post-template.php(255): apply_filters('the_content', '<a href="https:...')
+#18 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/module.php(190): the_content()
+#19 [internal function]: Elementor\Modules\PageTemplates\Module->print_callback()
+#20 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/module.php(207): call_user_func(Array)
+#21 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/templates/canvas.php(38): Elementor\Modules\PageTemplates\Module->print_content()
+#22 /home2/livsweet/public_html/wp-includes/template-loader.php(106): include('/home2/livsweet...')
+#23 /home2/livsweet/public_html/wp-blog-header.php(19): require_once('/home2/livsweet...')
+#24 /home2/livsweet/public_html/index.php(17): require('/home2/livsweet...')
+#25 {main}
+  thrown in /home2/livsweet/public_html/wp-includes/nav-menu-template.php on line 291
+[05-Jan-2023 16:40:15 UTC] Payment gateway with handle 'wc-payment-method-cod' has been deactivated in Cart and Checkout blocks because its dependency 'wc-blocks-registry' is not registered. Read the docs about registering assets for payment methods: https://github.com/woocommerce/woocommerce-blocks/blob/060f63c04f0f34f645200b5d4da9212125c49177/docs/third-party-developers/extensibility/checkout-payment-methods/payment-method-integration.md#registering-assets
+[05-Jan-2023 16:40:30 UTC] Payment gateway with handle 'wc-payment-method-cod' has been deactivated in Cart and Checkout blocks because its dependency 'wc-blocks-registry' is not registered. Read the docs about registering assets for payment methods: https://github.com/woocommerce/woocommerce-blocks/blob/060f63c04f0f34f645200b5d4da9212125c49177/docs/third-party-developers/extensibility/checkout-payment-methods/payment-method-integration.md#registering-assets
+[05-Jan-2023 16:40:41 UTC] Payment gateway with handle 'wc-payment-method-cod' has been deactivated in Cart and Checkout blocks because its dependency 'wc-blocks-registry' is not registered. Read the docs about registering assets for payment methods: https://github.com/woocommerce/woocommerce-blocks/blob/060f63c04f0f34f645200b5d4da9212125c49177/docs/third-party-developers/extensibility/checkout-payment-methods/payment-method-integration.md#registering-assets
+[05-Jan-2023 16:41:01 UTC] Payment gateway with handle 'wc-payment-method-cod' has been deactivated in Cart and Checkout blocks because its dependency 'wc-blocks-registry' is not registered. Read the docs about registering assets for payment methods: https://github.com/woocommerce/woocommerce-blocks/blob/060f63c04f0f34f645200b5d4da9212125c49177/docs/third-party-developers/extensibility/checkout-payment-methods/payment-method-integration.md#registering-assets
+[05-Jan-2023 16:41:17 UTC] Payment gateway with handle 'wc-payment-method-cod' has been deactivated in Cart and Checkout blocks because its dependency 'wc-blocks-registry' is not registered. Read the docs about registering assets for payment methods: https://github.com/woocommerce/woocommerce-blocks/blob/060f63c04f0f34f645200b5d4da9212125c49177/docs/third-party-developers/extensibility/checkout-payment-methods/payment-method-integration.md#registering-assets
+[07-Jan-2023 04:40:55 UTC] Payment gateway with handle 'wc-payment-method-cod' has been deactivated in Cart and Checkout blocks because its dependency 'wc-blocks-registry' is not registered. Read the docs about registering assets for payment methods: https://github.com/woocommerce/woocommerce-blocks/blob/060f63c04f0f34f645200b5d4da9212125c49177/docs/third-party-developers/extensibility/checkout-payment-methods/payment-method-integration.md#registering-assets
+[07-Jan-2023 04:41:15 UTC] Payment gateway with handle 'wc-payment-method-cod' has been deactivated in Cart and Checkout blocks because its dependency 'wc-blocks-registry' is not registered. Read the docs about registering assets for payment methods: https://github.com/woocommerce/woocommerce-blocks/blob/060f63c04f0f34f645200b5d4da9212125c49177/docs/third-party-developers/extensibility/checkout-payment-methods/payment-method-integration.md#registering-assets
+[07-Jan-2023 04:41:41 UTC] Payment gateway with handle 'wc-payment-method-cod' has been deactivated in Cart and Checkout blocks because its dependency 'wc-blocks-registry' is not registered. Read the docs about registering assets for payment methods: https://github.com/woocommerce/woocommerce-blocks/blob/060f63c04f0f34f645200b5d4da9212125c49177/docs/third-party-developers/extensibility/checkout-payment-methods/payment-method-integration.md#registering-assets
+[07-Jan-2023 04:42:11 UTC] Payment gateway with handle 'wc-payment-method-cod' has been deactivated in Cart and Checkout blocks because its dependency 'wc-blocks-registry' is not registered. Read the docs about registering assets for payment methods: https://github.com/woocommerce/woocommerce-blocks/blob/060f63c04f0f34f645200b5d4da9212125c49177/docs/third-party-developers/extensibility/checkout-payment-methods/payment-method-integration.md#registering-assets
+[07-Jan-2023 04:42:30 UTC] Payment gateway with handle 'wc-payment-method-cod' has been deactivated in Cart and Checkout blocks because its dependency 'wc-blocks-registry' is not registered. Read the docs about registering assets for payment methods: https://github.com/woocommerce/woocommerce-blocks/blob/060f63c04f0f34f645200b5d4da9212125c49177/docs/third-party-developers/extensibility/checkout-payment-methods/payment-method-integration.md#registering-assets
+[07-Jan-2023 21:41:02 UTC] Payment gateway with handle 'wc-payment-method-cod' has been deactivated in Cart and Checkout blocks because its dependency 'wc-blocks-registry' is not registered. Read the docs about registering assets for payment methods: https://github.com/woocommerce/woocommerce-blocks/blob/060f63c04f0f34f645200b5d4da9212125c49177/docs/third-party-developers/extensibility/checkout-payment-methods/payment-method-integration.md#registering-assets
+[07-Jan-2023 21:41:15 UTC] Payment gateway with handle 'wc-payment-method-cod' has been deactivated in Cart and Checkout blocks because its dependency 'wc-blocks-registry' is not registered. Read the docs about registering assets for payment methods: https://github.com/woocommerce/woocommerce-blocks/blob/060f63c04f0f34f645200b5d4da9212125c49177/docs/third-party-developers/extensibility/checkout-payment-methods/payment-method-integration.md#registering-assets
+[07-Jan-2023 21:41:31 UTC] Payment gateway with handle 'wc-payment-method-cod' has been deactivated in Cart and Checkout blocks because its dependency 'wc-blocks-registry' is not registered. Read the docs about registering assets for payment methods: https://github.com/woocommerce/woocommerce-blocks/blob/060f63c04f0f34f645200b5d4da9212125c49177/docs/third-party-developers/extensibility/checkout-payment-methods/payment-method-integration.md#registering-assets
+[07-Jan-2023 21:41:50 UTC] Payment gateway with handle 'wc-payment-method-cod' has been deactivated in Cart and Checkout blocks because its dependency 'wc-blocks-registry' is not registered. Read the docs about registering assets for payment methods: https://github.com/woocommerce/woocommerce-blocks/blob/060f63c04f0f34f645200b5d4da9212125c49177/docs/third-party-developers/extensibility/checkout-payment-methods/payment-method-integration.md#registering-assets
+[07-Jan-2023 21:42:06 UTC] Payment gateway with handle 'wc-payment-method-cod' has been deactivated in Cart and Checkout blocks because its dependency 'wc-blocks-registry' is not registered. Read the docs about registering assets for payment methods: https://github.com/woocommerce/woocommerce-blocks/blob/060f63c04f0f34f645200b5d4da9212125c49177/docs/third-party-developers/extensibility/checkout-payment-methods/payment-method-integration.md#registering-assets
+[10-Jan-2023 04:17:30 UTC] Payment gateway with handle 'wc-payment-method-cod' has been deactivated in Cart and Checkout blocks because its dependency 'wc-blocks-registry' is not registered. Read the docs about registering assets for payment methods: https://github.com/woocommerce/woocommerce-blocks/blob/060f63c04f0f34f645200b5d4da9212125c49177/docs/third-party-developers/extensibility/checkout-payment-methods/payment-method-integration.md#registering-assets
+[10-Jan-2023 04:19:55 UTC] Payment gateway with handle 'wc-payment-method-cod' has been deactivated in Cart and Checkout blocks because its dependency 'wc-blocks-registry' is not registered. Read the docs about registering assets for payment methods: https://github.com/woocommerce/woocommerce-blocks/blob/060f63c04f0f34f645200b5d4da9212125c49177/docs/third-party-developers/extensibility/checkout-payment-methods/payment-method-integration.md#registering-assets
+[10-Jan-2023 04:20:14 UTC] Payment gateway with handle 'wc-payment-method-cod' has been deactivated in Cart and Checkout blocks because its dependency 'wc-blocks-registry' is not registered. Read the docs about registering assets for payment methods: https://github.com/woocommerce/woocommerce-blocks/blob/060f63c04f0f34f645200b5d4da9212125c49177/docs/third-party-developers/extensibility/checkout-payment-methods/payment-method-integration.md#registering-assets
+[10-Jan-2023 04:21:52 UTC] Payment gateway with handle 'wc-payment-method-cod' has been deactivated in Cart and Checkout blocks because its dependency 'wc-blocks-registry' is not registered. Read the docs about registering assets for payment methods: https://github.com/woocommerce/woocommerce-blocks/blob/060f63c04f0f34f645200b5d4da9212125c49177/docs/third-party-developers/extensibility/checkout-payment-methods/payment-method-integration.md#registering-assets
+[10-Jan-2023 04:23:25 UTC] Payment gateway with handle 'wc-payment-method-cod' has been deactivated in Cart and Checkout blocks because its dependency 'wc-blocks-registry' is not registered. Read the docs about registering assets for payment methods: https://github.com/woocommerce/woocommerce-blocks/blob/060f63c04f0f34f645200b5d4da9212125c49177/docs/third-party-developers/extensibility/checkout-payment-methods/payment-method-integration.md#registering-assets
+[11-Jan-2023 20:42:59 UTC] PHP Fatal error:  Uncaught ValueError: Unknown format specifier "C" in /home2/livsweet/public_html/wp-includes/nav-menu-template.php:291
+Stack trace:
+#0 /home2/livsweet/public_html/wp-includes/nav-menu-template.php(291): sprintf('<ul id="%1$s" c...', 'menu-sitemenu', 'elementskit-nav...', '<li id="menu-it...')
+#1 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/widgets/nav-menu/nav-menu.php(1597): wp_nav_menu(Object(stdClass))
+#2 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/widgets/nav-menu/nav-menu.php(1516): Elementor\ElementsKit_Widget_Nav_Menu->render_raw()
+#3 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/controls-stack.php(2268): Elementor\ElementsKit_Widget_Nav_Menu->render()
+#4 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(609): Elementor\Controls_Stack->render_by_mode()
+#5 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(750): Elementor\Widget_Base->render_content()
+#6 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(449): Elementor\Widget_Base->print_content()
+#7 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(1354): Elementor\Element_Base->print_element()
+#8 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(449): Elementor\Element_Base->print_content()
+#9 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(1354): Elementor\Element_Base->print_element()
+#10 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(449): Elementor\Element_Base->print_content()
+#11 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/document.php(1669): Elementor\Element_Base->print_element()
+#12 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/document.php(1095): Elementor\Core\Base\Document->print_elements(Array)
+#13 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/frontend.php(1153): Elementor\Core\Base\Document->print_elements_with_wrapper(Array)
+#14 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/frontend.php(1048): Elementor\Frontend->get_builder_content(71)
+#15 /home2/livsweet/public_html/wp-includes/class-wp-hook.php(308): Elementor\Frontend->apply_builder_in_content('<a href="https:...')
+#16 /home2/livsweet/public_html/wp-includes/plugin.php(205): WP_Hook->apply_filters('<a href="https:...', Array)
+#17 /home2/livsweet/public_html/wp-includes/post-template.php(255): apply_filters('the_content', '<a href="https:...')
+#18 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/module.php(190): the_content()
+#19 [internal function]: Elementor\Modules\PageTemplates\Module->print_callback()
+#20 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/module.php(207): call_user_func(Array)
+#21 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/templates/canvas.php(38): Elementor\Modules\PageTemplates\Module->print_content()
+#22 /home2/livsweet/public_html/wp-includes/template-loader.php(106): include('/home2/livsweet...')
+#23 /home2/livsweet/public_html/wp-blog-header.php(19): require_once('/home2/livsweet...')
+#24 /home2/livsweet/public_html/index.php(17): require('/home2/livsweet...')
+#25 {main}
+  thrown in /home2/livsweet/public_html/wp-includes/nav-menu-template.php on line 291
+[13-Jan-2023 00:28:52 UTC] PHP Fatal error:  Uncaught Error: Class "AIOSEO\Plugin\Common\Breadcrumbs\Tags" not found in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Breadcrumbs/Breadcrumbs.php:75
+Stack trace:
+#0 /home2/livsweet/public_html/wp-includes/class-wp-hook.php(308): AIOSEO\Plugin\Common\Breadcrumbs\Breadcrumbs->init('')
+#1 /home2/livsweet/public_html/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#2 /home2/livsweet/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /home2/livsweet/public_html/wp-settings.php(617): do_action('init')
+#4 /home2/livsweet/public_html/wp-config.php(101): require_once('/home2/livsweet...')
+#5 /home2/livsweet/public_html/wp-load.php(50): require_once('/home2/livsweet...')
+#6 /home2/livsweet/public_html/wp-blog-header.php(13): require_once('/home2/livsweet...')
+#7 /home2/livsweet/public_html/index.php(17): require('/home2/livsweet...')
+#8 {main}
+  thrown in /home2/livsweet/public_html/wp-content/plugins/all-in-one-seo-pack/app/Common/Breadcrumbs/Breadcrumbs.php on line 75
+[26-Jan-2023 11:18:54 UTC] Payment gateway with handle 'wc-payment-method-cod' has been deactivated in Cart and Checkout blocks because its dependency 'wc-blocks-registry' is not registered. Read the docs about registering assets for payment methods: https://github.com/woocommerce/woocommerce-blocks/blob/060f63c04f0f34f645200b5d4da9212125c49177/docs/third-party-developers/extensibility/checkout-payment-methods/payment-method-integration.md#registering-assets
+[26-Jan-2023 11:19:33 UTC] Payment gateway with handle 'wc-payment-method-cod' has been deactivated in Cart and Checkout blocks because its dependency 'wc-blocks-registry' is not registered. Read the docs about registering assets for payment methods: https://github.com/woocommerce/woocommerce-blocks/blob/060f63c04f0f34f645200b5d4da9212125c49177/docs/third-party-developers/extensibility/checkout-payment-methods/payment-method-integration.md#registering-assets
+[26-Jan-2023 11:19:47 UTC] Payment gateway with handle 'wc-payment-method-cod' has been deactivated in Cart and Checkout blocks because its dependency 'wc-blocks-registry' is not registered. Read the docs about registering assets for payment methods: https://github.com/woocommerce/woocommerce-blocks/blob/060f63c04f0f34f645200b5d4da9212125c49177/docs/third-party-developers/extensibility/checkout-payment-methods/payment-method-integration.md#registering-assets
+[26-Jan-2023 11:20:37 UTC] Payment gateway with handle 'wc-payment-method-cod' has been deactivated in Cart and Checkout blocks because its dependency 'wc-blocks-registry' is not registered. Read the docs about registering assets for payment methods: https://github.com/woocommerce/woocommerce-blocks/blob/060f63c04f0f34f645200b5d4da9212125c49177/docs/third-party-developers/extensibility/checkout-payment-methods/payment-method-integration.md#registering-assets
+[26-Jan-2023 11:20:49 UTC] Payment gateway with handle 'wc-payment-method-cod' has been deactivated in Cart and Checkout blocks because its dependency 'wc-blocks-registry' is not registered. Read the docs about registering assets for payment methods: https://github.com/woocommerce/woocommerce-blocks/blob/060f63c04f0f34f645200b5d4da9212125c49177/docs/third-party-developers/extensibility/checkout-payment-methods/payment-method-integration.md#registering-assets
+[29-Jan-2023 23:27:12 UTC] Cron reschedule event error for hook: jetpack_sync_full_cron, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"jetpack_sync_interval","args":[],"interval":300}
+[29-Jan-2023 23:27:12 UTC] Cron unschedule event error for hook: jetpack_sync_full_cron, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"jetpack_sync_interval","args":[],"interval":300}
+[29-Jan-2023 23:27:12 UTC] Cron reschedule event error for hook: jetpack_sync_cron, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"jetpack_sync_interval","args":[],"interval":300}
+[29-Jan-2023 23:27:12 UTC] Cron unschedule event error for hook: jetpack_sync_cron, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"jetpack_sync_interval","args":[],"interval":300}
+[30-Jan-2023 12:41:12 UTC] PHP Fatal error:  Uncaught ValueError: Unknown format specifier "C" in /home2/livsweet/public_html/wp-includes/nav-menu-template.php:291
+Stack trace:
+#0 /home2/livsweet/public_html/wp-includes/nav-menu-template.php(291): sprintf('<ul id="%1$s" c...', 'menu-sitemenu', 'elementskit-nav...', '<li id="menu-it...')
+#1 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/widgets/nav-menu/nav-menu.php(1601): wp_nav_menu(Object(stdClass))
+#2 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/widgets/nav-menu/nav-menu.php(1520): Elementor\ElementsKit_Widget_Nav_Menu->render_raw()
+#3 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/controls-stack.php(2268): Elementor\ElementsKit_Widget_Nav_Menu->render()
+#4 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(609): Elementor\Controls_Stack->render_by_mode()
+#5 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(750): Elementor\Widget_Base->render_content()
+#6 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(449): Elementor\Widget_Base->print_content()
+#7 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(1354): Elementor\Element_Base->print_element()
+#8 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(449): Elementor\Element_Base->print_content()
+#9 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(1354): Elementor\Element_Base->print_element()
+#10 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(449): Elementor\Element_Base->print_content()
+#11 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/document.php(1669): Elementor\Element_Base->print_element()
+#12 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/document.php(1095): Elementor\Core\Base\Document->print_elements(Array)
+#13 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/frontend.php(1153): Elementor\Core\Base\Document->print_elements_with_wrapper(Array)
+#14 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/frontend.php(1048): Elementor\Frontend->get_builder_content(71)
+#15 /home2/livsweet/public_html/wp-includes/class-wp-hook.php(308): Elementor\Frontend->apply_builder_in_content('<a href="https:...')
+#16 /home2/livsweet/public_html/wp-includes/plugin.php(205): WP_Hook->apply_filters('<a href="https:...', Array)
+#17 /home2/livsweet/public_html/wp-includes/post-template.php(255): apply_filters('the_content', '<a href="https:...')
+#18 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/module.php(190): the_content()
+#19 [internal function]: Elementor\Modules\PageTemplates\Module->print_callback()
+#20 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/module.php(207): call_user_func(Array)
+#21 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/templates/canvas.php(38): Elementor\Modules\PageTemplates\Module->print_content()
+#22 /home2/livsweet/public_html/wp-includes/template-loader.php(106): include('/home2/livsweet...')
+#23 /home2/livsweet/public_html/wp-blog-header.php(19): require_once('/home2/livsweet...')
+#24 /home2/livsweet/public_html/index.php(17): require('/home2/livsweet...')
+#25 {main}
+  thrown in /home2/livsweet/public_html/wp-includes/nav-menu-template.php on line 291
+[04-Feb-2023 03:41:15 UTC] PHP Fatal error:  gd-webp encoding failed in /home2/livsweet/public_html/wp-content/plugins/webp-converter-for-media/src/Conversion/Method/GdMethod.php on line 170
+[04-Feb-2023 21:48:16 UTC] PHP Fatal error:  Uncaught ValueError: Unknown format specifier "C" in /home2/livsweet/public_html/wp-includes/nav-menu-template.php:291
+Stack trace:
+#0 /home2/livsweet/public_html/wp-includes/nav-menu-template.php(291): sprintf('<ul id="%1$s" c...', 'menu-sitemenu', 'elementskit-nav...', '<li id="menu-it...')
+#1 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/widgets/nav-menu/nav-menu.php(1601): wp_nav_menu(Object(stdClass))
+#2 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/widgets/nav-menu/nav-menu.php(1520): Elementor\ElementsKit_Widget_Nav_Menu->render_raw()
+#3 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/controls-stack.php(2268): Elementor\ElementsKit_Widget_Nav_Menu->render()
+#4 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(609): Elementor\Controls_Stack->render_by_mode()
+#5 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(750): Elementor\Widget_Base->render_content()
+#6 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(449): Elementor\Widget_Base->print_content()
+#7 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(1354): Elementor\Element_Base->print_element()
+#8 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(449): Elementor\Element_Base->print_content()
+#9 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(1354): Elementor\Element_Base->print_element()
+#10 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(449): Elementor\Element_Base->print_content()
+#11 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/document.php(1669): Elementor\Element_Base->print_element()
+#12 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/document.php(1095): Elementor\Core\Base\Document->print_elements(Array)
+#13 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/frontend.php(1153): Elementor\Core\Base\Document->print_elements_with_wrapper(Array)
+#14 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/frontend.php(1048): Elementor\Frontend->get_builder_content(71)
+#15 /home2/livsweet/public_html/wp-includes/class-wp-hook.php(308): Elementor\Frontend->apply_builder_in_content('<a href="https:...')
+#16 /home2/livsweet/public_html/wp-includes/plugin.php(205): WP_Hook->apply_filters('<a href="https:...', Array)
+#17 /home2/livsweet/public_html/wp-includes/post-template.php(255): apply_filters('the_content', '<a href="https:...')
+#18 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/module.php(190): the_content()
+#19 [internal function]: Elementor\Modules\PageTemplates\Module->print_callback()
+#20 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/module.php(207): call_user_func(Array)
+#21 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/templates/canvas.php(38): Elementor\Modules\PageTemplates\Module->print_content()
+#22 /home2/livsweet/public_html/wp-includes/template-loader.php(106): include('/home2/livsweet...')
+#23 /home2/livsweet/public_html/wp-blog-header.php(19): require_once('/home2/livsweet...')
+#24 /home2/livsweet/public_html/index.php(17): require('/home2/livsweet...')
+#25 {main}
+  thrown in /home2/livsweet/public_html/wp-includes/nav-menu-template.php on line 291
+[06-Feb-2023 04:08:54 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: invalid_schedule, Error message: Event schedule does not exist., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[06-Feb-2023 04:08:54 UTC] Cron reschedule event error for hook: wp_1_wc_regenerate_images_cron, Error code: invalid_schedule, Error message: Event schedule does not exist., Data: {"schedule":"wp_1_wc_regenerate_images_cron_interval","args":[],"interval":300}

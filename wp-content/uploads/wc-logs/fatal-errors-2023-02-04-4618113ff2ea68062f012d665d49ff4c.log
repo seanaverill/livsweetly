@@ -1,0 +1,32 @@
+2023-02-04T03:41:15+00:00 CRITICAL gd-webp encoding failed in /home2/livsweet/public_html/wp-content/plugins/webp-converter-for-media/src/Conversion/Method/GdMethod.php on line 170
+
+2023-02-04T21:48:16+00:00 CRITICAL Uncaught ValueError: Unknown format specifier "C" in /home2/livsweet/public_html/wp-includes/nav-menu-template.php:291
+Stack trace:
+#0 /home2/livsweet/public_html/wp-includes/nav-menu-template.php(291): sprintf('<ul id="%1$s" c...', 'menu-sitemenu', 'elementskit-nav...', '<li id="menu-it...')
+#1 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/widgets/nav-menu/nav-menu.php(1601): wp_nav_menu(Object(stdClass))
+#2 /home2/livsweet/public_html/wp-content/plugins/elementskit-lite/widgets/nav-menu/nav-menu.php(1520): Elementor\ElementsKit_Widget_Nav_Menu->render_raw()
+#3 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/controls-stack.php(2268): Elementor\ElementsKit_Widget_Nav_Menu->render()
+#4 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(609): Elementor\Controls_Stack->render_by_mode()
+#5 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(750): Elementor\Widget_Base->render_content()
+#6 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(449): Elementor\Widget_Base->print_content()
+#7 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(1354): Elementor\Element_Base->print_element()
+#8 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(449): Elementor\Element_Base->print_content()
+#9 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(1354): Elementor\Element_Base->print_element()
+#10 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/base/element-base.php(449): Elementor\Element_Base->print_content()
+#11 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/document.php(1669): Elementor\Element_Base->print_element()
+#12 /home2/livsweet/public_html/wp-content/plugins/elementor/core/base/document.php(1095): Elementor\Core\Base\Document->print_elements(Array)
+#13 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/frontend.php(1153): Elementor\Core\Base\Document->print_elements_with_wrapper(Array)
+#14 /home2/livsweet/public_html/wp-content/plugins/elementor/includes/frontend.php(1048): Elementor\Frontend->get_builder_content(71)
+#15 /home2/livsweet/public_html/wp-includes/class-wp-hook.php(308): Elementor\Frontend->apply_builder_in_content('<a href="https:...')
+#16 /home2/livsweet/public_html/wp-includes/plugin.php(205): WP_Hook->apply_filters('<a href="https:...', Array)
+#17 /home2/livsweet/public_html/wp-includes/post-template.php(255): apply_filters('the_content', '<a href="https:...')
+#18 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/module.php(190): the_content()
+#19 [internal function]: Elementor\Modules\PageTemplates\Module->print_callback()
+#20 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/module.php(207): call_user_func(Array)
+#21 /home2/livsweet/public_html/wp-content/plugins/elementor/modules/page-templates/templates/canvas.php(38): Elementor\Modules\PageTemplates\Module->print_content()
+#22 /home2/livsweet/public_html/wp-includes/template-loader.php(106): include('/home2/livsweet...')
+#23 /home2/livsweet/public_html/wp-blog-header.php(19): require_once('/home2/livsweet...')
+#24 /home2/livsweet/public_html/index.php(17): require('/home2/livsweet...')
+#25 {main}
+  thrown in /home2/livsweet/public_html/wp-includes/nav-menu-template.php on line 291
+

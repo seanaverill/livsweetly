@@ -1,0 +1,62 @@
+2023-02-06T16:15:30+00:00 CRITICAL Uncaught TypeError: array_merge(): Argument #1 must be of type array, bool given in /home2/livsweet/public_html/wp-content/plugins/sticky-side-buttons/sticky-side-buttons.php:34
+Stack trace:
+#0 /home2/livsweet/public_html/wp-content/plugins/sticky-side-buttons/sticky-side-buttons.php(34): array_merge(false, Array)
+#1 /home2/livsweet/public_html/wp-includes/class-wp-hook.php(308): ssb_activate(false)
+#2 /home2/livsweet/public_html/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#3 /home2/livsweet/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home2/livsweet/public_html/wp-admin/includes/plugin.php(691): do_action('activate_sticky...', false)
+#5 /home2/livsweet/public_html/wp-admin/plugins.php(58): activate_plugin('sticky-side-but...', 'https://livswee...', false)
+#6 {main}
+  thrown in /home2/livsweet/public_html/wp-content/plugins/sticky-side-buttons/sticky-side-buttons.php on line 34
+
+2023-02-06T16:15:33+00:00 CRITICAL Uncaught TypeError: array_merge(): Argument #1 must be of type array, bool given in /home2/livsweet/public_html/wp-content/plugins/sticky-side-buttons/sticky-side-buttons.php:34
+Stack trace:
+#0 /home2/livsweet/public_html/wp-content/plugins/sticky-side-buttons/sticky-side-buttons.php(34): array_merge(false, Array)
+#1 /home2/livsweet/public_html/wp-includes/class-wp-hook.php(308): ssb_activate('')
+#2 /home2/livsweet/public_html/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#3 /home2/livsweet/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home2/livsweet/public_html/wp-admin/plugins.php(194): do_action('activate_sticky...')
+#5 {main}
+  thrown in /home2/livsweet/public_html/wp-content/plugins/sticky-side-buttons/sticky-side-buttons.php on line 34
+
+2023-02-06T16:15:34+00:00 CRITICAL Uncaught TypeError: array_merge(): Argument #1 must be of type array, bool given in /home2/livsweet/public_html/wp-content/plugins/sticky-side-buttons/sticky-side-buttons.php:34
+Stack trace:
+#0 /home2/livsweet/public_html/wp-content/plugins/sticky-side-buttons/sticky-side-buttons.php(34): array_merge(false, Array)
+#1 /home2/livsweet/public_html/wp-includes/class-wp-hook.php(308): ssb_activate('')
+#2 /home2/livsweet/public_html/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#3 /home2/livsweet/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home2/livsweet/public_html/wp-admin/plugins.php(194): do_action('activate_sticky...')
+#5 {main}
+  thrown in /home2/livsweet/public_html/wp-content/plugins/sticky-side-buttons/sticky-side-buttons.php on line 34
+
+2023-02-06T16:15:47+00:00 CRITICAL Uncaught TypeError: array_merge(): Argument #1 must be of type array, bool given in /home2/livsweet/public_html/wp-content/plugins/sticky-side-buttons/sticky-side-buttons.php:34
+Stack trace:
+#0 /home2/livsweet/public_html/wp-content/plugins/sticky-side-buttons/sticky-side-buttons.php(34): array_merge(false, Array)
+#1 /home2/livsweet/public_html/wp-includes/class-wp-hook.php(308): ssb_activate(false)
+#2 /home2/livsweet/public_html/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#3 /home2/livsweet/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home2/livsweet/public_html/wp-admin/includes/plugin.php(691): do_action('activate_sticky...', false)
+#5 /home2/livsweet/public_html/wp-admin/plugins.php(58): activate_plugin('sticky-side-but...', 'https://livswee...', false)
+#6 {main}
+  thrown in /home2/livsweet/public_html/wp-content/plugins/sticky-side-buttons/sticky-side-buttons.php on line 34
+
+2023-02-06T16:15:48+00:00 CRITICAL Uncaught TypeError: array_merge(): Argument #1 must be of type array, bool given in /home2/livsweet/public_html/wp-content/plugins/sticky-side-buttons/sticky-side-buttons.php:34
+Stack trace:
+#0 /home2/livsweet/public_html/wp-content/plugins/sticky-side-buttons/sticky-side-buttons.php(34): array_merge(false, Array)
+#1 /home2/livsweet/public_html/wp-includes/class-wp-hook.php(308): ssb_activate('')
+#2 /home2/livsweet/public_html/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#3 /home2/livsweet/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home2/livsweet/public_html/wp-admin/plugins.php(194): do_action('activate_sticky...')
+#5 {main}
+  thrown in /home2/livsweet/public_html/wp-content/plugins/sticky-side-buttons/sticky-side-buttons.php on line 34
+
+2023-02-06T16:15:49+00:00 CRITICAL Uncaught TypeError: array_merge(): Argument #1 must be of type array, bool given in /home2/livsweet/public_html/wp-content/plugins/sticky-side-buttons/sticky-side-buttons.php:34
+Stack trace:
+#0 /home2/livsweet/public_html/wp-content/plugins/sticky-side-buttons/sticky-side-buttons.php(34): array_merge(false, Array)
+#1 /home2/livsweet/public_html/wp-includes/class-wp-hook.php(308): ssb_activate('')
+#2 /home2/livsweet/public_html/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#3 /home2/livsweet/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home2/livsweet/public_html/wp-admin/plugins.php(194): do_action('activate_sticky...')
+#5 {main}
+  thrown in /home2/livsweet/public_html/wp-content/plugins/sticky-side-buttons/sticky-side-buttons.php on line 34
+

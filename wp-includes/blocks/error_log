@@ -1,0 +1,8 @@
+[08-Nov-2022 19:41:46 America/Boise] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home2/livsweet/public_html/wp-includes/blocks/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /home2/livsweet/public_html/wp-includes/blocks/index.php on line 8
+[03-Dec-2022 21:29:13 America/Boise] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home2/livsweet/public_html/wp-includes/blocks/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /home2/livsweet/public_html/wp-includes/blocks/index.php on line 8
